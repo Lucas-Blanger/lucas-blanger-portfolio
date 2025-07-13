@@ -24,14 +24,15 @@ export default function About() {
           Durante minha trajetória, trabalhei em projetos utilizando diversas
           tecnologias, como Java, Web (HTML, CSS, JavaScript, Node.js), Flutter,
           C/C++, Python e desenvolvimento de jogos, além de experiência com
-          Sistemas ERP e projetos autorais. Tenho grande facilidade para
-          aprender e me adaptar a novas tecnologias, além de entusiasmo e
-          dedicação para encarar novos desafios, contribuir com equipes e sempre
-          buscar evolução constante como profissional e pessoa.
+          Sistemas ERP e projetos autorais, com um foco maior em desenvolvimento
+          back-end. Tenho grande facilidade para aprender e me adaptar a novas
+          tecnologias, além de entusiasmo e dedicação para encarar novos
+          desafios, contribuir com equipes e sempre buscar evolução constante
+          como profissional e pessoa.
         </p>
       </div>
       <a
-        href="public\LucasBlanger.pdf"
+        href="public/LucasBlanger.pdf"
         download
         className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-green-600/50 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition duration-300"
       >

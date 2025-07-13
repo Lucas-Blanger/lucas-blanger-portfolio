@@ -23,6 +23,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiDart,
+  SiFigma,
 } from "react-icons/si";
 
 const skills = [
@@ -75,6 +76,7 @@ const skills = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" />, level: 80 },
       { name: "Docker", icon: <FaDocker color="#2496ED" />, level: 70 },
       { name: "Linux", icon: <FaLinux color="#FCC624" />, level: 70 },
+      { name: "Figma", icon: <SiFigma color="#F24E1E" />, level: 50 },
     ],
   },
 ];
