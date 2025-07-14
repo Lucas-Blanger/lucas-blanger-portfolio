@@ -35,11 +35,6 @@ const skills = [
       { name: "JavaScript", icon: <FaJs color="#F7DF1E" />, level: 80 },
       { name: "React", icon: <FaReact color="#61DAFB" />, level: 50 },
       { name: "Typescript", icon: <SiTypescript color="#3178C6" />, level: 50 },
-      {
-        name: "Tailwind CSS",
-        icon: <SiTailwindcss color="#38BDF8" />,
-        level: 50,
-      },
     ],
   },
   {
@@ -60,6 +55,11 @@ const skills = [
       { name: "Express.js", icon: <SiExpress color="#000000" />, level: 80 },
       { name: "Flutter", icon: <SiFlutter color="#02569B" />, level: 40 },
       { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 35 },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss color="#38BDF8" />,
+        level: 50,
+      },
     ],
   },
   {

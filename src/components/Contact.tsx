@@ -40,7 +40,7 @@ export default function Contato() {
             href="mailto:blangerlucas@gmail.com"
             className="neon-button border-pink-400 text-pink-400 hover:bg-pink-500 hover:text-black"
           >
-            ✉️ Contato
+            ✉️ Email
           </a>
           <a
             href="https://lucs-blanger.itch.io/"
