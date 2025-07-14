@@ -1,6 +1,6 @@
 import { FaMedal, FaBullseye } from "react-icons/fa";
 
-const conquistas = [
+const achievements = [
   {
     icon: <FaMedal className="text-yellow-400" />,
     texto: "9º Lugar na Maratona de Programação Seletiva da UFRGS 2024",
@@ -15,10 +15,10 @@ const conquistas = [
   },
 ];
 
-export default function Conquistas() {
+export default function Achievements() {
   return (
     <section
-      id="conquistas"
+      id="achievements"
       className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-20 px-4 text-white"
     >
       <div className="max-w-4xl mx-auto">
@@ -30,7 +30,7 @@ export default function Conquistas() {
         </p>
 
         <div className="flex flex-col gap-6">
-          {conquistas.map((c, i) => (
+          {achievements.map((c, i) => (
             <div
               key={i}
               className="flex items-center gap-5 bg-gradient-to-r from-gray-800/60 to-gray-800/20 p-5 rounded-2xl ring-1 ring-green-400/30 shadow-xl 

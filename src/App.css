@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .neon-button {
+    @apply flex items-center gap-2 px-6 py-3 border rounded-lg text-lg font-medium transition-all duration-300 shadow-md;
+    box-shadow: 0 0 8px rgba(0, 255, 128, 0.4);
+  }
+
+  .neon-button:hover {
+    box-shadow: 0 0 12px rgba(0, 255, 128, 0.9), 0 0 24px rgba(0, 255, 128, 0.6);
+    transform: scale(1.05);
+  }
+}
