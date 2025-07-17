@@ -1,6 +1,9 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaItchIo } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Contato() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="contato"
@@ -8,12 +11,9 @@ export default function Contato() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-5xl font-bold text-green-400 mb-4">
-          Conecte-se comigo
+          {t("conect")}
         </h2>
-        <p className="text-gray-300 text-lg mb-12">
-          Dê uma olhada no que eu faço nas outras plataformas e entre em contato
-          para colaborações, oportunidades ou apenas para trocar uma ideia!
-        </p>
+        <p className="text-gray-300 text-lg mb-12">{t("inf_conect")}</p>
 
         <div className="flex justify-center gap-6 flex-wrap">
           <a
@@ -63,7 +63,7 @@ export default function Contato() {
               type="text"
               name="name"
               required
-              placeholder="Seu Nome *"
+              placeholder={t("place_name")}
               className="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white outline-none border border-green-400/40 focus:ring-2 focus:ring-green-400"
             />
             <input
@@ -78,14 +78,14 @@ export default function Contato() {
             name="message"
             rows={6}
             required
-            placeholder="Mensagem *"
+            placeholder={t("place_message")}
             className="w-full px-4 py-3 rounded-lg bg-gray-800 text-white outline-none border border-green-400/40 focus:ring-2 focus:ring-green-400"
           />
           <button
             type="submit"
             className="self-end px-6 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-400 transition-all"
           >
-            Enviar <FaEnvelope className="inline ml-2" />
+            {t("send")} <FaEnvelope className="inline ml-2" />
           </button>
         </form>
       </div>

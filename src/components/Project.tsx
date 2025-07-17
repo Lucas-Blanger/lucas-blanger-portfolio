@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 import {
   FaHtml5,
@@ -53,9 +54,8 @@ const projects: Project[] = [
   {
     id: "m83",
     title: "M83",
-    shortDesc: "Jogo Educacional de Astronomia com Godot",
-    longDesc:
-      "Este projeto apresenta um jogo digital educativo desenvolvido com o objetivo de ampliar o ensino de astronomia no ambiente escolar, especialmente nas séries finais do ensino fundamental. Ele utiliza tecnologia e gamificação como ferramentas de apoio à aprendizagem e conceituação de conteúdos relacionados à astronomia.",
+    shortDesc: "m83_short",
+    longDesc: "m83_long",
     cover: "src/assets/img/m83/m831 (1).png",
     repo: "https://github.com/Lucas-Blanger/M83",
     itch: "https://lucasblanger.itch.io/m83",
@@ -72,9 +72,8 @@ const projects: Project[] = [
   {
     id: "ewaste",
     title: "E-Waste",
-    shortDesc: "Sistema web de rotas para coleta de lixo eletrônico.",
-    longDesc:
-      "O E-Waste é um projeto desenvolvido para facilitar o descarte consciente de lixo eletrônico na cidade de Santa Maria, RS. Ele utiliza mapas interativos para ajudar a comunidade a localizar pontos de coleta próximos e oferece informações detalhadas sobre os locais e os materiais aceitos.",
+    shortDesc: "ewaste_short",
+    longDesc: "ewaste_long",
     cover: "src/assets/img/e-waste/ewaste-1 (2).png",
     repo: "https://github.com/Lucas-Blanger/e-waste",
     stack: [
@@ -94,10 +93,8 @@ const projects: Project[] = [
   {
     id: "fluxo",
     title: "Fluxo de Caixa",
-    shortDesc:
-      "Projeto web para controle de receitas e despesas, utilizando Node.js, Express e EJS como template engine.",
-    longDesc:
-      "Projeto web para controle de receitas e despesas, utilizando Node.js, Express e EJS como template engine. A aplicação permite visualizar o saldo atual, receitas, despesas e realizar cadastros e exclusões de lançamentos financeiros.",
+    shortDesc: "fluxo_short",
+    longDesc: "fluxo_long",
     cover: "src/assets/img/fluxodecaixa/fluxodecaixa.png",
     repo: "https://github.com/Lucas-Blanger/Fluxo-de-caixa",
     stack: [
@@ -111,10 +108,8 @@ const projects: Project[] = [
   {
     id: "conta",
     title: "Conta Horas",
-    shortDesc:
-      "Projeto web e desktop para cálcular o total de horas em certificados",
-    longDesc:
-      "Este é um aplicativo web feito com Flask que permite ao usuário enviar arquivos PDF contendo registros de horas e retorna a soma total das horas encontradas nos documentos.",
+    shortDesc: "conta_short",
+    longDesc: "conta_long",
     cover: "src/assets/img/contahoras/contahoras (1).png",
     repo: "https://github.com/Lucas-Blanger/contaHoras",
     stack: [
@@ -134,10 +129,8 @@ const projects: Project[] = [
   {
     id: "competetive",
     title: "Competetive Programming",
-    shortDesc:
-      "Este repositório é dedicado à resolução e organização de problemas de programação competitiva.",
-    longDesc:
-      "Bem-vindo ao repositório de problemas de programação competitiva que resolvi! Este repositório contém soluções para diversos problemas de programação competitiva, organizados por categoria.",
+    shortDesc: "competetive_short",
+    longDesc: "competetive_long",
     cover: "src/assets/img/competetive-programs/competetive.png",
     repo: "https://github.com/Lucas-Blanger/Competitive-problems",
     stack: [
@@ -155,9 +148,8 @@ const projects: Project[] = [
   {
     id: "colheita",
     title: "Colheita Feliz",
-    shortDesc: "Um jogo de fazenda 2D desenvolvido com Godot Engine 4.",
-    longDesc:
-      "Um jogo de fazenda 2D desenvolvido com Godot Engine 4, onde o jogador vive a experiência de plantar, cuidar e colher seus cultivos em um ambiente calmo e acolhedor.",
+    shortDesc: "colheita_short",
+    longDesc: "colheita_long",
     cover: "src/assets/img/colheitafeliz/logo.png",
     itch: "https://lucs-blanger.itch.io/colheita-feliz",
     repo: "https://github.com/Lucas-Blanger/colheita-feliz",
@@ -175,9 +167,8 @@ const projects: Project[] = [
   {
     id: "automantion",
     title: "Automantion House",
-    shortDesc: "Controlando com comandos de voz sua casa.",
-    longDesc:
-      "Controlando com comandos de voz usando Raspberry Pi, Arduino, sinais RF (radiofrequência) e infravermelho. Este projeto permite acionar luzes, TV e ar-condicionado de maneira inteligente com comandos falados em português! ",
+    shortDesc: "automantion_short",
+    longDesc: "automantion_long",
     cover: "src/assets/img/automationhouse/automantionhouse.png",
     repo: "https://github.com/Lucas-Blanger/automantionHouse",
     stack: [
@@ -194,6 +185,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   const [active, setActive] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   return (
     <section
@@ -202,10 +194,10 @@ export default function Projects() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center text-green-400 mb-4">
-          Projetos
+          {t("my_projects")}
         </h2>
         <p className="text-center mb-14 text-lg text-gray-300">
-          Conheça meus principais projetos
+          {t("about_projects")}{" "}
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -231,6 +223,8 @@ interface ProjectCardProps {
 }
 
 function ProjectCard({ data, onOpen }: ProjectCardProps) {
+  const { t } = useTranslation();
+
   return (
     <button
       onClick={() => onOpen(data.id)}
@@ -249,7 +243,7 @@ function ProjectCard({ data, onOpen }: ProjectCardProps) {
             {data.title}
           </h3>
           <p className="text-sm mt-2 text-gray-300 line-clamp-3">
-            {data.shortDesc}
+            {t(data.shortDesc)}
           </p>
         </div>
 
@@ -272,6 +266,7 @@ interface ProjectModalProps {
 
 function ProjectModal({ data, onClose }: ProjectModalProps) {
   const [zoomIndex, setZoomIndex] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   if (!data) return null;
   return (
@@ -291,7 +286,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
         </button>
 
         <h3 className="text-4xl font-bold text-green-400 mb-4">{data.title}</h3>
-        <p className="text-lg text-gray-300 mb-6">{data.longDesc}</p>
+        <p className="text-lg text-gray-300 mb-6">{t(data.longDesc)}</p>
 
         <div className="flex flex-wrap gap-4 mb-6">
           {data.stack.map((s, i) => (
@@ -312,7 +307,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-green-400 hover:text-green-200 mb-8"
           >
-            <FaGithub /> Ver no GitHub
+            <FaGithub /> {t("github")}
           </a>
         )}
 
@@ -323,12 +318,12 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-pink-400 hover:text-pink-300 mb-8 ml-6"
           >
-            <FaItchIo /> Ver no Itch.io
+            <FaItchIo /> {t("itchio")}
           </a>
         )}
         {data.gallery?.length > 0 && (
           <>
-            <h4 className="text-2xl font-semibold mb-3">Galeria</h4>
+            <h4 className="text-2xl font-semibold mb-3">{t("gallery")}</h4>
             <div className="grid sm:grid-cols-2 gap-4">
               {data.gallery.map((src, i) => (
                 <img

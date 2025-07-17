@@ -1,28 +1,31 @@
+import { useTranslation } from "react-i18next";
+
 export default function Timeline() {
+  const { t } = useTranslation();
   const education = [
     {
       year: "2020-2022",
       institution:
         "Instituto Federal de Educação,Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim",
-      course: "Ensino Médio Integrado ao Técnico em Informática",
+      course: t("high_school"),
     },
     {
       year: "2024-2024",
       institution: "Universidade Federal de Santa Maria (UFSM)",
-      course: "Bacharelado em Ciência da Computação",
+      course: t("bacharel"),
     },
     {
       year: "2025-atualmente",
       institution:
         "Universidade Regional Integrada do Alto Uruguai e das Missões - Campus Erechim (URI - Erechim)",
-      course: "Bacharelado em Ciência da Computação",
+      course: t("bacharel"),
     },
   ];
 
   return (
     <section className="bg-gray-900 pt-8 pb-16 px-4">
       <h2 className="text-3xl md:text-4xl font-bold text-green-400 text-center mb-12    ">
-        Linha do Tempo Educacional
+        {t("time")}
       </h2>
 
       <div className="relative border-l-4 border-green-400 mx-auto max-w-2xl">

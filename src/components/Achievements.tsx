@@ -1,21 +1,24 @@
 import { FaMedal, FaBullseye } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const achievements = [
   {
     icon: <FaMedal className="text-yellow-400" />,
-    texto: "9º Lugar na Maratona de Programação Seletiva da UFRGS 2024",
+    texto: "f_achievement",
   },
   {
     icon: <FaBullseye className="text-pink-400" />,
-    texto: "13º Lugar na Maratona Gaúcha de Programação 2024",
+    texto: "s_achievement",
   },
   {
     icon: <FaMedal className="text-orange-400" />,
-    texto: "10º Lugar na Maratona SBC Fase Zero 2025 - Rio Grande do Sul",
+    texto: "t_achievement",
   },
 ];
 
 export default function Achievements() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="achievements"
@@ -23,10 +26,10 @@ export default function Achievements() {
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl font-bold text-center text-green-400 mb-4">
-          Conquistas
+          {t("my_achievements")}
         </h2>
         <p className="text-center mb-12 text-lg text-gray-300">
-          Alguns dos meus resultados em competições
+          {t("about_achievements")}
         </p>
 
         <div className="flex flex-col gap-6">
@@ -42,7 +45,7 @@ export default function Achievements() {
                 </div>
               </div>
               <p className="text-lg text-gray-100 font-medium leading-snug">
-                {c.texto}
+                {t(c.texto)}
               </p>
             </div>
           ))}

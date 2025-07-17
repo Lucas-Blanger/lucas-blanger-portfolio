@@ -1,9 +1,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import brFlag from "@/assets/BR.png";
+import usFlag from "@/assets/EUA.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
+  const changeLanguage = (lng: "pt" | "en") => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <nav className="bg-black shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -25,7 +32,7 @@ export default function Navbar() {
               href="#about"
               className="hover:text-green-200 text-green-600 text-xl"
             >
-              Sobre
+              {t("about")}
             </a>
           </li>
           <li>
@@ -33,7 +40,7 @@ export default function Navbar() {
               href="#skills"
               className="hover:text-green-200 text-green-600 text-xl"
             >
-              Skills
+              {t("skills")}
             </a>
           </li>
           <li>
@@ -41,16 +48,32 @@ export default function Navbar() {
               href="#projects"
               className="hover:text-green-200 text-green-600 text-xl"
             >
-              Projetos
+              {t("projects")}
             </a>
           </li>
           <li>
             <a
-              href="#contact"
+              href="#contato"
               className="hover:text-green-200 text-green-600 text-xl"
             >
-              Contato
+              {t("contact")}
             </a>
+          </li>
+          <li className="flex space-x-2 ml-4">
+            <button onClick={() => changeLanguage("pt")}>
+              <img
+                src={brFlag}
+                alt="Português"
+                className="w-8 h-8 rounded-full"
+              />
+            </button>
+            <button onClick={() => changeLanguage("en")}>
+              <img
+                src={usFlag}
+                alt="English"
+                className="w-8 h-8 rounded-full"
+              />
+            </button>
           </li>
         </ul>
       </div>
@@ -64,7 +87,7 @@ export default function Navbar() {
                 className="hover:text-green-200 text-green-600 text-lg"
                 onClick={() => setIsOpen(false)}
               >
-                Sobre
+                {t("about")}
               </a>
             </li>
             <li>
@@ -73,7 +96,7 @@ export default function Navbar() {
                 className="hover:text-green-200 text-green-600 text-lg"
                 onClick={() => setIsOpen(false)}
               >
-                Skills
+                {t("skills")}
               </a>
             </li>
             <li>
@@ -82,7 +105,7 @@ export default function Navbar() {
                 className="hover:text-green-200 text-green-600 text-lg"
                 onClick={() => setIsOpen(false)}
               >
-                Projetos
+                {t("projects")}
               </a>
             </li>
             <li>
@@ -91,8 +114,24 @@ export default function Navbar() {
                 className="hover:text-green-200 text-green-600 text-lg"
                 onClick={() => setIsOpen(false)}
               >
-                Contato
+                {t("contact")}
               </a>
+            </li>
+            <li className="flex space-x-4 mt-4">
+              <button onClick={() => changeLanguage("pt")}>
+                <img
+                  src={brFlag}
+                  alt="Português"
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
+              <button onClick={() => changeLanguage("en")}>
+                <img
+                  src={usFlag}
+                  alt="English"
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
             </li>
           </ul>
         </div>

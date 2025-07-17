@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="relative bg-gray-900 text-white text-center pt-16 pb-8 mt-[-1px]">
-      {/* Lobo no meio */}
       <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-20">
         <img src="src/assets/wolfwalk.png" alt="Lobo" className="w-24 h-auto" />
       </div>
@@ -40,9 +43,9 @@ export default function Footer() {
 
       <div className="relative z-10">
         <p className="text-sm text-gray-400 tracking-wide">
-          © {new Date().getFullYear()} Um portfólio projetado e construído por
+          © {new Date().getFullYear()} {t("f_footer")}
           <span className="text-green-400 font-semibold"> Lucas Blanger </span>
-          com muito 💚. Todos os direitos reservados.
+          {t("s_footer")}
         </p>
       </div>
     </footer>

@@ -10,6 +10,7 @@ import {
   FaLinux,
   FaJava,
   FaReact,
+  FaFlagUsa,
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -25,6 +26,7 @@ import {
   SiDart,
   SiFigma,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   {
@@ -77,11 +79,13 @@ const skills = [
       { name: "Docker", icon: <FaDocker color="#2496ED" />, level: 70 },
       { name: "Linux", icon: <FaLinux color="#FCC624" />, level: 70 },
       { name: "Figma", icon: <SiFigma color="#F24E1E" />, level: 50 },
+      { name: "English", icon: <FaFlagUsa color="#4285F4" />, level: 90 },
     ],
   },
 ];
 
 export default function Skills() {
+  const { t } = useTranslation();
   return (
     <section
       id="skills"
@@ -89,7 +93,7 @@ export default function Skills() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-green-400 text-center mb-16">
-          Minhas Skills
+          {t("my_skills")}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-x-24 gap-y-16">

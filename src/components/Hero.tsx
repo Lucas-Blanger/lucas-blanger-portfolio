@@ -1,6 +1,8 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaItchIo } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
   return (
     <section
       id="hero"
@@ -9,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,0,0.2),transparent_70%)] animate-pulse"></div>
 
       <div className="z-10 flex flex-col items-center md:items-start text-center md:text-left px-4 md:px-20">
-        <p className="text-green-400 text-2xl mb-2">Oi, me chamo</p>
+        <p className="text-green-400 text-2xl mb-2">{t("hello")}</p>
         <h1 className="text-5xl md:text-7xl font-bold mb-2">Lucas</h1>
         <h1 className="text-5xl md:text-7xl font-bold mb-4">Blanger</h1>
 
