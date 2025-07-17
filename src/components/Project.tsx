@@ -158,7 +158,7 @@ const projects: Project[] = [
     shortDesc: "Um jogo de fazenda 2D desenvolvido com Godot Engine 4.",
     longDesc:
       "Um jogo de fazenda 2D desenvolvido com Godot Engine 4, onde o jogador vive a experiência de plantar, cuidar e colher seus cultivos em um ambiente calmo e acolhedor.",
-    cover: "src/assets/img/colheitafeliz/colheita.png",
+    cover: "src/assets/img/colheitafeliz/logo.png",
     itch: "https://lucs-blanger.itch.io/colheita-feliz",
     repo: "https://github.com/Lucas-Blanger/colheita-feliz",
     stack: [
@@ -169,6 +169,7 @@ const projects: Project[] = [
     gallery: [
       "src/assets/img/colheitafeliz/colheita.png",
       "src/assets/img/colheitafeliz/feliz.png",
+      "src/assets/img/colheitafeliz/logo.png",
     ],
   },
   {
