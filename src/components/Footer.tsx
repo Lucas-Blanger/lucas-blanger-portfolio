@@ -1,6 +1,27 @@
 export default function Footer() {
   return (
     <footer className="relative bg-gray-900 text-white text-center pt-16 pb-8 mt-[-1px]">
+      {/* Lobo no meio */}
+      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-20">
+        <img src="src/assets/wolfwalk.png" alt="Lobo" className="w-24 h-auto" />
+      </div>
+
+      <div className="absolute -top-16 left-10 z-10">
+        <img
+          src="src/assets/tree.png"
+          alt="Árvore esquerda"
+          className="w-20 h-auto"
+        />
+      </div>
+
+      <div className="absolute -top-16 right-10 z-10">
+        <img
+          src="src/assets/tree.png"
+          alt="Árvore direita"
+          className="w-20 h-auto"
+        />
+      </div>
+
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           className="relative block w-full h-[80px]"
