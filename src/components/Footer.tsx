@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-gray-900 text-white text-center pt-16 pb-8 mt-[-1px]">
-      <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 z-20">
+      <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 z-20">
         <img src="src/assets/wolfwalk.png" alt="Lobo" className="w-24 h-auto" />
       </div>
 
