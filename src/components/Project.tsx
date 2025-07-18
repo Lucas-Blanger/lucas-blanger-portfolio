@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
@@ -269,6 +269,30 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
   const { t } = useTranslation();
 
   if (!data) return null;
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (zoomIndex !== null) {
+        if (e.key === "ArrowLeft") {
+          setZoomIndex((prev) =>
+            prev !== null
+              ? (prev - 1 + data.gallery.length) % data.gallery.length
+              : null
+          );
+        } else if (e.key === "ArrowRight") {
+          setZoomIndex((prev) =>
+            prev !== null ? (prev + 1) % data.gallery.length : null
+          );
+        } else if (e.key === "Escape") {
+          setZoomIndex(null);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [zoomIndex, data.gallery.length]);
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
