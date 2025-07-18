@@ -13,6 +13,8 @@
   "my_skills": "My Skills",
   "my_projects": "Projects",
   "about_projects": "Discover my main projects",
+  "portfolio_short": "Personal portfolio developed with React, Tailwind CSS, and i18next, showcasing programming projects and games.",
+  "portfolio_long": "Personal portfolio created with React, Tailwind CSS, and i18next to showcase my programming projects, games developed with Godot, and web solutions. The application features a responsive design, multilingual support (Portuguese and English), and displays details such as descriptions, technology stacks, and links to GitHub repositories or Itch.io demos, highlighting my skills in frontend, backend, and game development.",
   "m83_short": "Educational Astronomy Game with Godot",
   "m83_long": "This project features an educational digital game developed to enhance astronomy teaching in schools, especially in the final years of elementary education. It uses technology and gamification as support tools for learning and conceptualizing astronomy-related content.",
   "ewaste_short": "Web system for electronic waste collection routes.",

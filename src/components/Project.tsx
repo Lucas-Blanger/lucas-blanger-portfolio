@@ -13,7 +13,7 @@ import {
   FaGitAlt,
   //FaLinux,
   //FaJava,
-  //FaReact,
+  FaReact,
   FaGithub,
   FaItchIo,
 } from "react-icons/fa";
@@ -26,8 +26,8 @@ import {
   SiExpress,
   SiFlask,
   SiGodotengine,
-  //SiTypescript,
-  //SiTailwindcss,
+  SiTypescript,
+  SiTailwindcss,
   //SiDart,
   //SiFigma,
   SiDjango,
@@ -51,6 +51,32 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: "portfolio",
+    title: "Lucas Blanger Portfólio",
+    shortDesc: "portfolio_short",
+    longDesc: "portfolio_long",
+    cover: "src/assets/img/portfolio/port1.png",
+    repo: "https://github.com/Lucas-Blanger/lucas-blanger-portfolio",
+    stack: [
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss color="#38BDF8" />,
+      },
+      { name: "React", icon: <FaReact color="#61DAFB" /> },
+      { name: "Typescript", icon: <SiTypescript color="#3178C6" /> },
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
+    ],
+    gallery: [
+      "src/assets/img/portfolio/port1.png",
+      "src/assets/img/portfolio/port2.png",
+      "src/assets/img/portfolio/port3.png",
+      "src/assets/img/portfolio/port4.png",
+      "src/assets/img/portfolio/port6.png",
+      "src/assets/img/portfolio/port7.png",
+      "src/assets/img/portfolio/port8.png",
+    ],
+  },
   {
     id: "m83",
     title: "M83",

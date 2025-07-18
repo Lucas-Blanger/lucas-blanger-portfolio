@@ -64,14 +64,22 @@ export default function Navbar() {
               <img
                 src={brFlag}
                 alt="Português"
-                className="w-8 h-8 rounded-full"
+                className={`w-8 h-8 rounded-full ${
+                  i18n.language === "pt"
+                    ? "border-2 border-green-400 shadow-green-400 shadow"
+                    : ""
+                }`}
               />
             </button>
             <button onClick={() => changeLanguage("en")}>
               <img
                 src={usFlag}
                 alt="English"
-                className="w-8 h-8 rounded-full"
+                className={`w-8 h-8 rounded-full ${
+                  i18n.language === "en"
+                    ? "border-2 border-green-400 shadow-green-400 shadow"
+                    : ""
+                }`}
               />
             </button>
           </li>

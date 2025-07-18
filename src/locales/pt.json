@@ -13,6 +13,8 @@
   "my_skills": "Minhas Skills",
   "my_projects": "Projetos",
   "about_projects": "Conheça meus principais projetos",
+  "portfolio_short": "Portfólio pessoal desenvolvido com React, Tailwind CSS e i18next, apresentando projetos de programação e jogos.",
+  "portfolio_long": "Portfólio pessoal criado com React, Tailwind CSS e i18next para apresentar meus projetos de programação, jogos criados com Godot, e soluções web. A aplicação possui design responsivo, suporte multilíngue (português e inglês) e exibe detalhes como descrições, stacks de tecnologias utilizadas e links para repositórios GitHub ou demos no Itch.io, destacando minhas habilidades em frontend, backend e desenvolvimento de jogos.",
   "m83_short": "Jogo Educacional de Astronomia com Godot",
   "m83_long": "Este projeto apresenta um jogo digital educativo desenvolvido com o objetivo de ampliar o ensino de astronomia no ambiente escolar, especialmente nas séries finais do ensino fundamental. Ele utiliza tecnologia e gamificação como ferramentas de apoio à aprendizagem e conceituação de conteúdos relacionados à astronomia.",
   "ewaste_short": "Sistema web de rotas para coleta de lixo eletrônico.",
