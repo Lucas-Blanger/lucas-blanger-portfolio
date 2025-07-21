@@ -19,7 +19,7 @@ export default function About() {
         </p>
       </div>
       <a
-        href="public/LucasBlanger.pdf"
+        href="/LucasBlanger.pdf"
         download
         className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-green-600/50 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition duration-300"
       >

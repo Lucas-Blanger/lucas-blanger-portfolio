@@ -9,19 +9,19 @@ export default function ArticlesPage() {
       id: 1,
       title: "title_1",
       desc: "desc_1",
-      pdf: "public/Bancos de Dados a Serviço da Sustentabilidade_ Monitoramento e Redução de Impactos Ambientais por Meio da Tecnologia.pdf",
+      pdf: "/Bancos de Dados a Serviço da Sustentabilidade_ Monitoramento e Redução de Impactos Ambientais por Meio da Tecnologia.pdf",
     },
     {
       id: 2,
       title: "title_2",
       desc: "desc_2",
-      pdf: "public/DESENVOLVIMENTO E VALIDAÇÃO DE UM JOGO DIGITAL PARA O ENSINO DE ASTRONOMIA NAS SÉRIES FINAIS DO ENSINO FUNDAMENTAL.pdf",
+      pdf: "/DESENVOLVIMENTO E VALIDAÇÃO DE UM JOGO DIGITAL PARA O ENSINO DE ASTRONOMIA NAS SÉRIES FINAIS DO ENSINO FUNDAMENTAL.pdf",
     },
     {
       id: 3,
       title: "title_3",
       desc: "desc_3",
-      pdf: "public/DESENVOLVIMENTO E IMPLEMENTAÇÃO DE JOGOS CLÁSSICOS NO ARDUINO UNO.pdf",
+      pdf: "/DESENVOLVIMENTO E IMPLEMENTAÇÃO DE JOGOS CLÁSSICOS NO ARDUINO UNO.pdf",
     },
   ];
 

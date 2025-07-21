@@ -56,7 +56,7 @@ const projects: Project[] = [
     title: "Lucas Blanger Portfólio",
     shortDesc: "portfolio_short",
     longDesc: "portfolio_long",
-    cover: "src/assets/img/portfolio/port1.png",
+    cover: "/assets/img/portfolio/port1.png",
     repo: "https://github.com/Lucas-Blanger/lucas-blanger-portfolio",
     stack: [
       {
@@ -68,13 +68,13 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/portfolio/port1.png",
-      "src/assets/img/portfolio/port2.png",
-      "src/assets/img/portfolio/port3.png",
-      "src/assets/img/portfolio/port4.png",
-      "src/assets/img/portfolio/port6.png",
-      "src/assets/img/portfolio/port7.png",
-      "src/assets/img/portfolio/port8.png",
+      "/assets/img/portfolio/port1.png",
+      "/assets/img/portfolio/port2.png",
+      "/assets/img/portfolio/port3.png",
+      "/assets/img/portfolio/port4.png",
+      "/assets/img/portfolio/port6.png",
+      "/assets/img/portfolio/port7.png",
+      "/assets/img/portfolio/port8.png",
     ],
   },
   {
@@ -82,7 +82,7 @@ const projects: Project[] = [
     title: "M83",
     shortDesc: "m83_short",
     longDesc: "m83_long",
-    cover: "src/assets/img/m83/m831 (1).png",
+    cover: "/assets/img/m83/m831 (1).png",
     repo: "https://github.com/Lucas-Blanger/M83",
     itch: "https://lucasblanger.itch.io/m83",
     stack: [
@@ -90,17 +90,14 @@ const projects: Project[] = [
       { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
-    gallery: [
-      "src/assets/img/m83/m831 (1).png",
-      "src/assets/img/m83/m831 (2).png",
-    ],
+    gallery: ["/assets/img/m83/m831 (1).png", "/assets/img/m83/m831 (2).png"],
   },
   {
     id: "ewaste",
     title: "E-Waste",
     shortDesc: "ewaste_short",
     longDesc: "ewaste_long",
-    cover: "src/assets/img/e-waste/ewaste-1 (2).png",
+    cover: "/assets/img/e-waste/ewaste-1 (2).png",
     repo: "https://github.com/Lucas-Blanger/e-waste",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
@@ -112,8 +109,8 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/e-waste/ewaste-1 (1).png",
-      "src/assets/img/e-waste/ewaste-1 (2).png",
+      "/assets/img/e-waste/ewaste-1 (1).png",
+      "/assets/img/e-waste/ewaste-1 (2).png",
     ],
   },
   {
@@ -121,7 +118,7 @@ const projects: Project[] = [
     title: "Fluxo de Caixa",
     shortDesc: "fluxo_short",
     longDesc: "fluxo_long",
-    cover: "src/assets/img/fluxodecaixa/fluxodecaixa.png",
+    cover: "/assets/img/fluxodecaixa/fluxodecaixa.png",
     repo: "https://github.com/Lucas-Blanger/Fluxo-de-caixa",
     stack: [
       { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
@@ -129,14 +126,14 @@ const projects: Project[] = [
       { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
-    gallery: ["src/assets/img/fluxodecaixa/fluxodecaixa.png"],
+    gallery: ["/assets/img/fluxodecaixa/fluxodecaixa.png"],
   },
   {
     id: "conta",
     title: "Conta Horas",
     shortDesc: "conta_short",
     longDesc: "conta_long",
-    cover: "src/assets/img/contahoras/contahoras (1).png",
+    cover: "/assets/img/contahoras/contahoras (1).png",
     repo: "https://github.com/Lucas-Blanger/contaHoras",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
@@ -147,9 +144,9 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/contahoras/contahoras (1).png",
-      "src/assets/img/contahoras/contahoras (2).png",
-      "src/assets/img/contahoras/contahoras (3).png",
+      "/assets/img/contahoras/contahoras (1).png",
+      "/assets/img/contahoras/contahoras (2).png",
+      "/assets/img/contahoras/contahoras (3).png",
     ],
   },
   {
@@ -157,7 +154,7 @@ const projects: Project[] = [
     title: "Competetive Programming",
     shortDesc: "competetive_short",
     longDesc: "competetive_long",
-    cover: "src/assets/img/competetive-programs/competetive.png",
+    cover: "/assets/img/competetive-programs/competetive.png",
     repo: "https://github.com/Lucas-Blanger/Competitive-problems",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
@@ -166,9 +163,9 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/competetive-programs/competetive.png",
-      "src/assets/img/competetive-programs/competetive (1).png",
-      "src/assets/img/competetive-programs/competetive (2).png",
+      "/assets/img/competetive-programs/competetive.png",
+      "/assets/img/competetive-programs/competetive (1).png",
+      "/assets/img/competetive-programs/competetive (2).png",
     ],
   },
   {
@@ -176,7 +173,7 @@ const projects: Project[] = [
     title: "Colheita Feliz",
     shortDesc: "colheita_short",
     longDesc: "colheita_long",
-    cover: "src/assets/img/colheitafeliz/logo.png",
+    cover: "/assets/img/colheitafeliz/logo.png",
     itch: "https://lucs-blanger.itch.io/colheita-feliz",
     repo: "https://github.com/Lucas-Blanger/colheita-feliz",
     stack: [
@@ -185,9 +182,9 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/colheitafeliz/colheita.png",
-      "src/assets/img/colheitafeliz/feliz.png",
-      "src/assets/img/colheitafeliz/logo.png",
+      "/assets/img/colheitafeliz/colheita.png",
+      "/assets/img/colheitafeliz/feliz.png",
+      "/assets/img/colheitafeliz/logo.png",
     ],
   },
   {
@@ -195,7 +192,7 @@ const projects: Project[] = [
     title: "Automantion House",
     shortDesc: "automantion_short",
     longDesc: "automantion_long",
-    cover: "src/assets/img/automationhouse/automantionhouse.png",
+    cover: "/assets/img/automationhouse/automantionhouse.png",
     repo: "https://github.com/Lucas-Blanger/automantionHouse",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
@@ -203,8 +200,8 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
-      "src/assets/img/automationhouse/automation.png",
-      "src/assets/img/automationhouse/automantionhouse.png",
+      "/assets/img/automationhouse/automation.png",
+      "/assets/img/automationhouse/automantionhouse.png",
     ],
   },
 ];
