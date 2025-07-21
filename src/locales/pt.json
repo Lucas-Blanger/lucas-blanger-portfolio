@@ -44,5 +44,16 @@
   "place_message": "Mensagem *",
   "send": "Enviar",
   "f_footer": "Um portfólio projetado e construído por",
-  "s_footer": "com muito 💚. Todos os direitos reservados."
+  "s_footer": "com muito 💚. Todos os direitos reservados.",
+  "my_articles": "Meus Artigos",
+  "articles_desc": "Explore meus artigos e publicações sobre programação e tecnologia.",
+  "see_articles": "Ver Artigos",
+  "read_more": "Ler mais",
+  "back_home": "Voltar",
+  "title_1": "Bancos de Dados a Serviço da Sustentabilidade: Monitoramento e Redução de Impactos Ambientais por Meio da Tecnologia",
+  "desc_1": "Os impactos ambientais se intensificam, exigindo soluções eficazes. Este artigo investiga o uso de bancos de dados para monitorar e mitigar danos ecológicos, integrando dados de sensores IoT, APIs públicas e registros institucionai",
+  "title_2": "DESENVOLVIMENTO E VALIDAÇÃO DE UM JOGO DIGITAL PARA O ENSINO DE ASTRONOMIA NAS SÉRIES FINAIS DO ENSINO FUNDAMENTAL",
+  "desc_2": "O presente trabalho desenvolve e aplica na prática um jogo digital para ampliar o ensino de astronomia no ambiente escolar das séries finais do ensino fundamental.",
+  "title_3": "ESENVOLVIMENTO E IMPLEMENTAÇÃO DE JOGOS CLÁSSICOS NO ARDUINO UNO",
+  "desc_3": "Este projeto tem como objetivo o desenvolvimento e a implementação de jogos clássicos interativos utilizando a plataforma Arduino Uno. Foram recriados três jogos: Snake Game, Dino Runner e Brick Breaker."
 }

@@ -44,5 +44,16 @@
   "place_message": "Message *",
   "send": "Send",
   "f_footer": "A portfolio designed and built by",
-  "s_footer": "with lots of 💚. All rights reserved."
+  "s_footer": "with lots of 💚. All rights reserved.",
+  "my_articles": "My Articles",
+  "articles_desc": "Explore my articles and publications about programming and technology.",
+  "see_articles": "See Articles",
+  "read_more": "Read More",
+  "back_home": "Back Home",
+  "title_1": "Databases at the Service of Sustainability: Monitoring and Reducing Environmental Impacts Through Technology",
+  "desc_1": "Environmental impacts are intensifying, demanding effective solutions. This article investigates the use of databases to monitor and mitigate ecological damage, integrating data from IoT sensors, public APIs, and institutional records.",
+  "title_2": "Development and Validation of a Digital Game for Teaching Astronomy in the Final Years of Elementary School",
+  "desc_2": "This study develops and practically applies a digital game to enhance the teaching of astronomy in the school environment for the final years of elementary school.",
+  "title_3": "Development and Implementation of Classic Games on Arduino Uno",
+  "desc_3": "This project aims to develop and implement interactive classic games using the Arduino Uno platform. Three games were recreated: Snake Game, Dino Runner, and Brick Breakers."
 }
