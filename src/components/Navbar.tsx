@@ -125,19 +125,27 @@ export default function Navbar() {
                 {t("contact")}
               </a>
             </li>
-            <li className="flex space-x-4 mt-4">
+            <li className="flex space-x-2 ml-4">
               <button onClick={() => changeLanguage("pt")}>
                 <img
                   src={brFlag}
                   alt="Português"
-                  className="w-8 h-8 rounded-full"
+                  className={`w-8 h-8 rounded-full ${
+                    i18n.language === "pt"
+                      ? "border-2 border-green-400 shadow-green-400 shadow"
+                      : ""
+                  }`}
                 />
               </button>
               <button onClick={() => changeLanguage("en")}>
                 <img
                   src={usFlag}
                   alt="English"
-                  className="w-8 h-8 rounded-full"
+                  className={`w-8 h-8 rounded-full ${
+                    i18n.language === "en"
+                      ? "border-2 border-green-400 shadow-green-400 shadow"
+                      : ""
+                  }`}
                 />
               </button>
             </li>
