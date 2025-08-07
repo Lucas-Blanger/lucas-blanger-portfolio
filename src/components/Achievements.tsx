@@ -4,6 +4,10 @@ import { useTranslation } from "react-i18next";
 const achievements = [
   {
     icon: <FaMedal className="text-yellow-400" />,
+    texto: "2° (VICE-CAMPEÃO) da Maratona Gaúcha de Programação 2025",
+  },
+  {
+    icon: <FaMedal className="text-yellow-400" />,
     texto: "f_achievement",
   },
   {
