@@ -16,6 +16,7 @@ import {
   FaReact,
   FaGithub,
   FaItchIo,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -30,6 +31,7 @@ import {
   SiTailwindcss,
   //SiDart,
   //SiFigma,
+  SiLaravel,
   SiDjango,
 } from "react-icons/si";
 
@@ -91,6 +93,29 @@ const projects: Project[] = [
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: ["/assets/img/m83/m831 (1).png", "/assets/img/m83/m831 (2).png"],
+  },
+
+  {
+    id: "adminlte-crud",
+    title: "AdminLTE CRUD",
+    shortDesc: "laravel_adminlte_short",
+    longDesc: "laravel_adminlte_long",
+    cover: "/assets/img/adminlte-crud/dash.png",
+    repo: "https://github.com/Lucas-Blanger/adminlte-crud",
+    stack: [
+      { name: "PHP", icon: <FaPhp color="#777BB4" /> },
+      { name: "Laravel", icon: <SiLaravel color="#FF2D20" /> },
+      { name: "Bootstrap", icon: <FaBootstrap color="#7952B3" /> },
+      { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F05033" /> },
+    ],
+    gallery: [
+      "/assets/img/adminlte-crud/dash.png",
+      "/assets/img/adminlte-crud/add.png",
+      "/assets/img/adminlte-crud/login.png",
+      "/assets/img/adminlte-crud/register.png",
+      "/assets/img/adminlte-crud/edit.png",
+    ],
   },
   {
     id: "ewaste",
@@ -291,9 +316,8 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
   const [zoomIndex, setZoomIndex] = useState<number | null>(null);
   const { t } = useTranslation();
 
-  if (!data) return null;
-
   useEffect(() => {
+    if (!data) return;
     const handleKeyDown = (e: KeyboardEvent) => {
       if (zoomIndex !== null) {
         if (e.key === "ArrowLeft") {
@@ -314,7 +338,9 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [zoomIndex, data.gallery.length]);
+  }, [zoomIndex, data?.gallery?.length, data]);
+
+  if (!data) return null;
 
   return (
     <div

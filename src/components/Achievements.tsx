@@ -18,6 +18,10 @@ const achievements = [
     icon: <FaMedal className="text-orange-400" />,
     texto: "t_achievement",
   },
+  {
+    icon: <FaMedal className="text-orange-400" />,
+    texto: "p_achievement",
+  },
 ];
 
 export default function Achievements() {

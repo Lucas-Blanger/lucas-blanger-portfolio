@@ -9,21 +9,17 @@ import {
   FaGitAlt,
   FaLinux,
   FaJava,
-  FaReact,
   FaFlagUsa,
 } from "react-icons/fa";
 import {
   SiCplusplus,
-  SiFlutter,
   SiLaravel,
   SiMysql,
   SiPostgresql,
   SiExpress,
   SiFlask,
   SiGodotengine,
-  SiTypescript,
   SiTailwindcss,
-  SiDart,
   SiFigma,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
@@ -35,8 +31,6 @@ const skills = [
       { name: "HTML5", icon: <FaHtml5 color="#E34F26" />, level: 90 },
       { name: "CSS3", icon: <FaCss3Alt color="#1572B6" />, level: 85 },
       { name: "JavaScript", icon: <FaJs color="#F7DF1E" />, level: 80 },
-      { name: "React", icon: <FaReact color="#61DAFB" />, level: 50 },
-      { name: "Typescript", icon: <SiTypescript color="#3178C6" />, level: 50 },
     ],
   },
   {
@@ -45,18 +39,16 @@ const skills = [
       { name: "Python", icon: <FaPython color="#3776AB" />, level: 80 },
       { name: "C/C++", icon: <SiCplusplus color="#00599C" />, level: 80 },
       { name: "Java", icon: <FaJava color="#007396" />, level: 60 },
-      { name: "Node.js", icon: <FaNodeJs color="#339933" />, level: 80 },
-      { name: "PHP", icon: <FaPhp color="#8892be" />, level: 40 },
-      { name: "Dart", icon: <SiDart color="#0175C2" />, level: 35 },
+      { name: "Node.js", icon: <FaNodeJs color="#339933" />, level: 50 },
+      { name: "PHP", icon: <FaPhp color="#8892be" />, level: 80 },
     ],
   },
   {
     category: "Frameworks",
     items: [
       { name: "Flask", icon: <SiFlask color="#000000" />, level: 80 },
-      { name: "Express.js", icon: <SiExpress color="#000000" />, level: 80 },
-      { name: "Flutter", icon: <SiFlutter color="#02569B" />, level: 40 },
-      { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 35 },
+      { name: "Express.js", icon: <SiExpress color="#000000" />, level: 50 },
+      { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 80 },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss color="#38BDF8" />,

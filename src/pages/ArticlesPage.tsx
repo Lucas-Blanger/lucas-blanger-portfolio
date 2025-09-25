@@ -62,7 +62,7 @@ export default function ArticlesPage() {
             to="/"
             className="inline-flex items-center gap-2 px-4 py-2 border border-green-400 rounded-lg text-green-400 hover:bg-green-400 hover:text-black transition"
           >
-            ⬅️ {t("back_home") || "Voltar"}
+            {t("back_home") || "Voltar"}
           </Link>
         </div>
       </div>
