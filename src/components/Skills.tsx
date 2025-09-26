@@ -8,7 +8,6 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
-  FaJava,
   FaFlagUsa,
 } from "react-icons/fa";
 import {
