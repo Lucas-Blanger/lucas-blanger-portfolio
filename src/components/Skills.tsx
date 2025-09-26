@@ -38,7 +38,6 @@ const skills = [
     items: [
       { name: "Python", icon: <FaPython color="#3776AB" />, level: 80 },
       { name: "C/C++", icon: <SiCplusplus color="#00599C" />, level: 80 },
-      { name: "Java", icon: <FaJava color="#007396" />, level: 60 },
       { name: "Node.js", icon: <FaNodeJs color="#339933" />, level: 50 },
       { name: "PHP", icon: <FaPhp color="#8892be" />, level: 80 },
     ],
