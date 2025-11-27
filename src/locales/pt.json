@@ -13,6 +13,8 @@
   "my_skills": "Minhas Skills",
   "my_projects": "Projetos",
   "about_projects": "Conheça meus principais projetos",
+  "nego-maq-api_short": "API completa para loja online de facas e churrasco com Flask. Catálogo de produtos, carrinho, pedidos, cálculo de frete, área admin e autenticação JWT. Pronta para produção com Docker.",
+  "nego-maq-api_long": "API REST desenvolvida em Flask para uma loja online de facas e artigos de churrasco. O sistema oferece funcionalidades completas para e-commerce, incluindo catálogo de produtos, gerenciamento de pedidos, autenticação de usuários e área administrativa.",
   "portfolio_short": "Portfólio pessoal desenvolvido com React, Tailwind CSS e i18next, apresentando projetos de programação e jogos.",
   "portfolio_long": "Portfólio pessoal criado com React, Tailwind CSS e i18next para apresentar meus projetos de programação, jogos criados com Godot, e soluções web. A aplicação possui design responsivo, suporte multilíngue (português e inglês) e exibe detalhes como descrições, stacks de tecnologias utilizadas e links para repositórios GitHub ou demos no Itch.io, destacando minhas habilidades em frontend, backend e desenvolvimento de jogos.",
   "m83_short": "Jogo Educacional de Astronomia com Godot",

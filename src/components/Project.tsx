@@ -9,7 +9,7 @@ import {
   FaNodeJs,
   FaPython,
   FaPhp,
-  //FaDocker,
+  FaDocker,
   FaGitAlt,
   //FaLinux,
   //FaJava,
@@ -24,6 +24,7 @@ import {
   //SiLaravel,
   SiMysql,
   //SiPostgresql,
+  SiPostman,
   SiExpress,
   SiFlask,
   SiGodotengine,
@@ -48,11 +49,34 @@ interface Project {
   cover: string;
   repo?: string;
   itch?: string;
+  postman?: string;
   stack: StackItem[];
   gallery: string[];
 }
 
 const projects: Project[] = [
+  {
+    id: "nego-maq-api",
+    title: "Nego Maq API",
+    shortDesc: "nego-maq-api_short",
+    longDesc: "nego-maq-api_long",
+    cover: "/assets/img/nego-maq-api/maq.png",
+    repo: "https://github.com/Lucas-Blanger/nego-maq-api",
+    postman: "https://documenter.getpostman.com/view/42551640/2sB3WpSMJN",
+    stack: [
+      { name: "Python", icon: <FaPython color="#3776AB" />},
+      { name: "Flask", icon: <SiFlask color="#000000" /> },
+      { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+      { name: "Docker", icon: <FaDocker color="#2496ED" />},
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
+    ],
+    gallery: [
+      "/assets/img/nego-maq-api/maq.png",
+      "/assets/img/nego-maq-api/tela_inicial.png",
+      "/assets/img/nego-maq-api/tela-categoria.png",
+      "/assets/img/portfolio/tela_checkout.png",
+    ],
+  },
   {
     id: "portfolio",
     title: "Lucas Blanger Portfólio",
@@ -392,6 +416,17 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             className="inline-flex items-center gap-2 text-pink-400 hover:text-pink-300 mb-8 ml-6"
           >
             <FaItchIo /> {t("itchio")}
+          </a>
+        )}
+
+        {data.postman && (
+          <a
+            href={data.postman}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-600 mb-8 ml-6"
+          >
+            <SiPostman /> {t("postman")}
           </a>
         )}
         {data.gallery?.length > 0 && (
