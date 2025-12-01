@@ -23,6 +23,12 @@ export default function ArticlesPage() {
       desc: "desc_3",
       pdf: "/DESENVOLVIMENTO E IMPLEMENTAÇÃO DE JOGOS CLÁSSICOS NO ARDUINO UNO.pdf",
     },
+    {
+      id: 4,
+      title: "title_4",
+      desc: "desc_4",
+      pdf: "/Desenvolvimento_de_uma_Plataforma_de_E_commerce_para_Artigos_de_Churrasco_Integrada_a_uma_API_REST.pdf",
+    },
   ];
 
   return (

@@ -60,5 +60,7 @@
   "title_2": "Development and Validation of a Digital Game for Teaching Astronomy in the Final Years of Elementary School",
   "desc_2": "This study develops and practically applies a digital game to enhance the teaching of astronomy in the school environment for the final years of elementary school.",
   "title_3": "Development and Implementation of Classic Games on Arduino Uno",
-  "desc_3": "This project aims to develop and implement interactive classic games using the Arduino Uno platform. Three games were recreated: Snake Game, Dino Runner, and Brick Breakers."
+  "desc_3": "This project aims to develop and implement interactive classic games using the Arduino Uno platform. Three games were recreated: Snake Game, Dino Runner, and Brick Breakers.",
+  "title_4": "Development of an E-commerce Platform for Barbecue Products Integrated with a REST API",
+  "desc_4": "This project presents the development of an e-commerce platform specialized in barbecue products, built for the company NegoMaq Couros & Facas. The solution uses Vue.js/Quasar, Flask, MySQL, and integrations with Mercado Pago and Melhor Envio, providing features such as product management, user authentication, shopping cart, and order administration. The platform proves to be an accessible and scalable option for Brazilian microenterprises."
 }
