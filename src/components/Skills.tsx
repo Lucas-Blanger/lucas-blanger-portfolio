@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 import {
   SiCplusplus,
-  SiLaravel,
   SiMysql,
   SiPostgresql,
   SiExpress,
@@ -20,6 +19,7 @@ import {
   SiGodotengine,
   SiTailwindcss,
   SiFigma,
+  SiDjango,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -45,8 +45,8 @@ const skills = [
     category: "Frameworks",
     items: [
       { name: "Flask", icon: <SiFlask color="#000000" />, level: 80 },
+      { name: "Django Rest", icon: <SiDjango color="#092E20" />, level: 80 },
       { name: "Express.js", icon: <SiExpress color="#000000" />, level: 50 },
-      { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 80 },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss color="#38BDF8" />,
