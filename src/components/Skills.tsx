@@ -4,7 +4,6 @@ import {
   FaJs,
   FaNodeJs,
   FaPython,
-  FaPhp,
   FaDocker,
   FaGitAlt,
   FaLinux,
