@@ -16,7 +16,7 @@ import {
   SiExpress,
   SiFlask,
   SiGodotengine,
-  SiTailwindcss,
+  SiLaravel,
   SiFigma,
   SiDjango,
 } from "react-icons/si";
@@ -36,7 +36,7 @@ const skills = [
     items: [
       { name: "Python", icon: <FaPython color="#3776AB" />, level: 80 },
       { name: "C++", icon: <SiCplusplus color="#00599C" />, level: 80 },
-      { name: "Node.js", icon: <FaNodeJs color="#339933" />, level: 50 },
+      { name: "Node.js", icon: <FaNodeJs color="#339933" />, level: 30 },
     ],
   },
   {
@@ -44,12 +44,8 @@ const skills = [
     items: [
       { name: "Flask", icon: <SiFlask color="#000000" />, level: 80 },
       { name: "Django Rest", icon: <SiDjango color="#092E20" />, level: 80 },
-      { name: "Express.js", icon: <SiExpress color="#000000" />, level: 50 },
-      {
-        name: "Tailwind CSS",
-        icon: <SiTailwindcss color="#38BDF8" />,
-        level: 50,
-      },
+      { name: "Express.js", icon: <SiExpress color="#000000" />, level: 30 },
+      { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 30 },
     ],
   },
   {
