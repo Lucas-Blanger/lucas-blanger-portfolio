@@ -218,25 +218,6 @@ const projects: Project[] = [
     ],
   },
   {
-    id: "colheita",
-    title: "Colheita Feliz",
-    shortDesc: "colheita_short",
-    longDesc: "colheita_long",
-    cover: "/assets/img/colheitafeliz/logo.png",
-    itch: "https://lucs-blanger.itch.io/colheita-feliz",
-    repo: "https://github.com/Lucas-Blanger/colheita-feliz",
-    stack: [
-      { name: "Python", icon: <FaPython color="#3776AB" /> },
-      { name: "Godot", icon: <SiGodotengine color="#478CBF" /> },
-      { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
-    ],
-    gallery: [
-      "/assets/img/colheitafeliz/colheita.png",
-      "/assets/img/colheitafeliz/feliz.png",
-      "/assets/img/colheitafeliz/logo.png",
-    ],
-  },
-  {
     id: "automantion",
     title: "Automantion House",
     shortDesc: "automantion_short",

@@ -29,8 +29,6 @@
   "conta_long": "This is a web application built with Flask that allows users to upload PDF files containing hour records and returns the total sum of hours found in the documents.",
   "competetive_short": "This repository is dedicated to solving and organizing competitive programming problems.",
   "competetive_long": "Welcome to my competitive programming problem repository! This repository contains solutions for various competitive programming problems, organized by category.",
-  "colheita_short": "A 2D farming game developed with Godot Engine 4.",
-  "colheita_long": "A 2D farming game developed with Godot Engine 4, where the player experiences planting, caring for, and harvesting their crops in a calm and welcoming environment.",
   "automantion_short": "Controlling your home with voice commands.",
   "automantion_long": "Controlling your home with voice commands using Raspberry Pi, Arduino, RF (radio frequency) and infrared signals. This project allows you to intelligently control lights, TV, and air conditioning with spoken commands in Portuguese!",
   "github": "View on GitHub",

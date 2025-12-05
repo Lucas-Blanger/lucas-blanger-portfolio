@@ -29,8 +29,6 @@
   "conta_long": "Este é um aplicativo web feito com Flask que permite ao usuário enviar arquivos PDF contendo registros de horas e retorna a soma total das horas encontradas nos documentos.",
   "competetive_short": "Este repositório é dedicado à resolução e organização de problemas de programação competitiva.",
   "competetive_long": "Bem-vindo ao repositório de problemas de programação competitiva que resolvi! Este repositório contém soluções para diversos problemas de programação competitiva, organizados por categoria.",
-  "colheita_short": "Um jogo de fazenda 2D desenvolvido com Godot Engine 4.",
-  "colheita_long": "Um jogo de fazenda 2D desenvolvido com Godot Engine 4, onde o jogador vive a experiência de plantar, cuidar e colher seus cultivos em um ambiente calmo e acolhedor.",
   "automantion_short": "Controlando com comandos de voz sua casa.",
   "automantion_long": "Controlando com comandos de voz usando Raspberry Pi, Arduino, sinais RF (radiofrequência) e infravermelho. Este projeto permite acionar luzes, TV e ar-condicionado de maneira inteligente com comandos falados em português! ",
   "github": "Ver no GitHub",
