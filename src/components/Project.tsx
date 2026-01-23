@@ -34,6 +34,7 @@ import {
   //SiFigma,
   SiLaravel,
   SiDjango,
+  SiPostgresql,
 } from "react-icons/si";
 
 interface StackItem {
@@ -64,10 +65,10 @@ const projects: Project[] = [
     repo: "https://github.com/Lucas-Blanger/nego-maq-api",
     postman: "https://documenter.getpostman.com/view/42551640/2sB3WpSMJN",
     stack: [
-      { name: "Python", icon: <FaPython color="#3776AB" />},
+      { name: "Python", icon: <FaPython color="#3776AB" /> },
       { name: "Flask", icon: <SiFlask color="#000000" /> },
       { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
-      { name: "Docker", icon: <FaDocker color="#2496ED" />},
+      { name: "Docker", icon: <FaDocker color="#2496ED" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
     gallery: [
@@ -75,6 +76,26 @@ const projects: Project[] = [
       "/assets/img/nego-maq-api/tela_inicial.png",
       "/assets/img/nego-maq-api/tela-categoria.png",
       "/assets/img/portfolio/tela_checkout.png",
+    ],
+  },
+  {
+    id: "agendify",
+    title: "Agendify API",
+    shortDesc: "agendify_short",
+    longDesc: "agendify_long",
+    cover: "/assets/img/agendify/1.png",
+    repo: "https://github.com/Lucas-Blanger/Agendify",
+    stack: [
+      { name: "Python", icon: <FaPython color="#3776AB" /> },
+      { name: "Django Rest Framework", icon: <SiDjango color="#092E20" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
+      { name: "Docker", icon: <FaDocker color="#2496ED" /> },
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F05032" /> },
+    ],
+    gallery: [
+      "/assets/img/agendify/1.png",
+      "/assets/img/agendify/2.png",
+      "/assets/img/agendify/3.png",
     ],
   },
   {
@@ -329,11 +350,11 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
           setZoomIndex((prev) =>
             prev !== null
               ? (prev - 1 + data.gallery.length) % data.gallery.length
-              : null
+              : null,
           );
         } else if (e.key === "ArrowRight") {
           setZoomIndex((prev) =>
-            prev !== null ? (prev + 1) % data.gallery.length : null
+            prev !== null ? (prev + 1) % data.gallery.length : null,
           );
         } else if (e.key === "Escape") {
           setZoomIndex(null);
@@ -448,7 +469,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
                   setZoomIndex((prev) =>
                     prev !== null
                       ? (prev - 1 + data.gallery.length) % data.gallery.length
-                      : null
+                      : null,
                   )
                 }
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-green-200 z-10"
@@ -459,7 +480,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
               <button
                 onClick={() =>
                   setZoomIndex((prev) =>
-                    prev !== null ? (prev + 1) % data.gallery.length : null
+                    prev !== null ? (prev + 1) % data.gallery.length : null,
                   )
                 }
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-green-200 z-10"
