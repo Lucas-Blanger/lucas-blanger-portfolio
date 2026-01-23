@@ -96,6 +96,7 @@ const projects: Project[] = [
       "/assets/img/agendify/1.png",
       "/assets/img/agendify/2.png",
       "/assets/img/agendify/3.png",
+      "/assets/img/agendify/capa.png",
     ],
   },
   {
