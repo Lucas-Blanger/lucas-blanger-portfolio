@@ -100,6 +100,31 @@ const projects: Project[] = [
     ],
   },
   {
+    id: "agro-clima",
+    title: "AgroClima",
+    shortDesc: "agroclima_short",
+    longDesc: "agroclima_long",
+    cover: "/assets/img/agro-clima/dash.png",
+    repo: "https://github.com/Lucas-Blanger/AgroClima",
+    stack: [
+      { name: "Python", icon: <FaPython color="#3776AB" /> },
+      { name: "Django Rest Framework", icon: <SiDjango color="#092E20" /> },
+      { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss color="#38BDF8" />,
+      },
+      { name: "React", icon: <FaReact color="#61DAFB" /> },
+      { name: "Typescript", icon: <SiTypescript color="#3178C6" /> },
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F05032" /> },
+    ],
+    gallery: [
+      "/assets/img/agro-clima/dash.png",
+      "/assets/img/agro-clima/weather.png",
+      "/assets/img/agro-clima/news.png",
+    ],
+  },
+  {
     id: "portfolio",
     title: "Lucas Blanger Portfólio",
     shortDesc: "portfolio_short",
