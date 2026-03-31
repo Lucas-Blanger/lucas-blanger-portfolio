@@ -109,7 +109,8 @@ const projects: Project[] = [
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
       { name: "Django Rest Framework", icon: <SiDjango color="#092E20" /> },
-      { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
+      { name: "Docker", icon: <FaDocker color="#2496ED" /> },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss color="#38BDF8" />,
