@@ -8,6 +8,7 @@ import {
   FaGitAlt,
   FaLinux,
   FaFlagUsa,
+  FaChartLine,
 } from "react-icons/fa";
 import {
   SiCplusplus,
@@ -19,6 +20,9 @@ import {
   SiLaravel,
   SiFigma,
   SiDjango,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -46,6 +50,19 @@ const skills = [
       { name: "Django Rest", icon: <SiDjango color="#092E20" />, level: 80 },
       { name: "Express.js", icon: <SiExpress color="#000000" />, level: 30 },
       { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 30 },
+    ],
+  },
+  {
+    category: "Data Analysis / Machine Learning",
+    items: [
+      { name: "Pandas", icon: <SiPandas color="#150458" />, level: 75 },
+      { name: "Numpy", icon: <SiNumpy color="#013243" />, level: 75 },
+      { name: "Matplotlib", icon: <FaChartLine color="#11557C" />, level: 75 },
+      {
+        name: "Scikit-learn",
+        icon: <SiScikitlearn color="#F7931E" />,
+        level: 75,
+      },
     ],
   },
   {
