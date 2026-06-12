@@ -18,11 +18,12 @@ import {
   SiFlask,
   SiGodotengine,
   SiLaravel,
-  SiFigma,
   SiDjango,
   SiPandas,
   SiNumpy,
   SiScikitlearn,
+  SiKubernetes,
+  SiFastapi,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -48,6 +49,7 @@ const skills = [
     items: [
       { name: "Flask", icon: <SiFlask color="#000000" />, level: 80 },
       { name: "Django Rest", icon: <SiDjango color="#092E20" />, level: 80 },
+      { name: "FastAPI", icon: <SiFastapi color="#009688" />, level: 80 },
       { name: "Express.js", icon: <SiExpress color="#000000" />, level: 30 },
       { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 30 },
     ],
@@ -78,8 +80,8 @@ const skills = [
       { name: "Godot", icon: <SiGodotengine color="#478CBF" />, level: 70 },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" />, level: 80 },
       { name: "Docker", icon: <FaDocker color="#2496ED" />, level: 70 },
+      { name: "Kubernetes", icon: <SiKubernetes color="#326CE5" />, level: 40 },
       { name: "Linux", icon: <FaLinux color="#FCC624" />, level: 70 },
-      { name: "Figma", icon: <SiFigma color="#F24E1E" />, level: 50 },
       { name: "English", icon: <FaFlagUsa color="#4285F4" />, level: 90 },
     ],
   },
