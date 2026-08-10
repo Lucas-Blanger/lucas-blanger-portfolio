@@ -64,5 +64,9 @@
   "title_4": "Development of an E-commerce Platform for Barbecue Products Integrated with a REST API",
   "desc_4": "This project presents the development of an e-commerce platform specialized in barbecue products, built for the company NegoMaq Couros & Facas. The solution uses Vue.js/Quasar, Flask, MySQL, and integrations with Mercado Pago and Melhor Envio, providing features such as product management, user authentication, shopping cart, and order administration. The platform proves to be an accessible and scalable option for Brazilian microenterprises.",
   "agroclima_short": "Agricultural climate monitoring platform with a Django REST API, real-time weather data, agribusiness news, and commodity price tracking.",
-  "agroclima_long": "A complete agribusiness monitoring solution built with Django REST Framework and React with TypeScript. The platform integrates real-time weather data via OpenWeather, agricultural news aggregation, and commodity price tracking, with automated daily updates and interactive Swagger documentation."
+  "agroclima_long": "A complete agribusiness monitoring solution built with Django REST Framework and React with TypeScript. The platform integrates real-time weather data via OpenWeather, agricultural news aggregation, and commodity price tracking, with automated daily updates and interactive Swagger documentation.",
+  "desc_5": "TimeForge is an automatic academic timetable generator using CSP, Backtracking, and FFD. Built with a Java (Spring Boot) backend, Vue.js frontend, and PostgreSQL database.",
+  "title_5": "TimeForge: Automatic Academic Timetable Generation Using CSP, Backtracking, and FFD",
+  "desc_6": "This paper presents a progressive study of the Josephus problem using Linked List simulation, Mathematical Recurrence, and Segment Tree techniques. Developed in C++ for competitive programming analysis.",
+  "title_6": "The Josephus Problem: Analysis and Solutions Under Different Paradigms"
 }
