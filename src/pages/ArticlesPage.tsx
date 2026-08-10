@@ -29,6 +29,18 @@ export default function ArticlesPage() {
       desc: "desc_4",
       pdf: "/Desenvolvimento_de_uma_Plataforma_de_E_commerce_para_Artigos_de_Churrasco_Integrada_a_uma_API_REST.pdf",
     },
+    {
+      id: 5,
+      title: "title_5",
+      desc: "desc_5",
+      pdf: "/Time_Forge-Um_Sistema_Para_Geração_Automática_De_Grades_Horárias_Em_Instituições_De_Ensino_Usando_Uma_Abordagem_Híbrida_Com_Constraint_Satisfaction_Problem_Backtracking_E_First_Fit_Decreasing.pdf",
+    },
+    {
+      id: 6,
+      title: "title_6",
+      desc: "desc_6",
+      pdf: "/O_Problema_de_Josephus__Análise_e_Soluções_sob_Diferentes_Paradigmas.pdf",
+    },
   ];
 
   return (
