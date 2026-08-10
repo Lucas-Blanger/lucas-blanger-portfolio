@@ -24,6 +24,7 @@ import {
   SiScikitlearn,
   SiKubernetes,
   SiFastapi,
+  SiRedis,
 } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
@@ -71,7 +72,8 @@ const skills = [
     category: "Database",
     items: [
       { name: "MySQL", icon: <SiMysql color="#4479A1" />, level: 90 },
-      { name: "PostgreSQL", icon: <SiPostgresql color="#336791" />, level: 50 },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#336791" />, level: 90 },
+      { name: "Redis", icon: <SiRedis color="#DC382D" />, level: 50 },
     ],
   },
   {
