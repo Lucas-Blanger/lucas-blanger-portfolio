@@ -45,6 +45,14 @@ export default function Navbar() {
           </li>
           <li>
             <a
+              href="#experiences"
+              className="hover:text-green-200 text-green-600 text-xl"
+            >
+              {t("experiences")}
+            </a>
+          </li>
+          <li>
+            <a
               href="#projects"
               className="hover:text-green-200 text-green-600 text-xl"
             >
@@ -105,6 +113,15 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 {t("skills")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experiences"
+                className="hover:text-green-200 text-green-600 text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                {t("experiences")}
               </a>
             </li>
             <li>
