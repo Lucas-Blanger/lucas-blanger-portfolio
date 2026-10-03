@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Achievements from "@/components/Achievements";
 import TimeLine from "@/components/TimeLine";
+import Experience from "@/components/Experience";
 import Articles from "@/components/Articles";
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <TimeLine />
+      <Experience />
       <Skills />
       <Projects />
       <Achievements />

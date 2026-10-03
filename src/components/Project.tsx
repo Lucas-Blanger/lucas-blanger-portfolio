@@ -35,6 +35,9 @@ import {
   SiLaravel,
   SiDjango,
   SiPostgresql,
+  SiFastapi,
+  SiMongodb,
+  SiRedis,
 } from "react-icons/si";
 
 interface StackItem {
@@ -56,6 +59,34 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: "melitrack",
+    title: "Melitrack",
+    shortDesc: "Melitrack_short",
+    longDesc: "Melitrack_long",
+    cover: "/assets/img/melitrack/Melitrack.png",
+    repo: "https://github.com/Lucas-Blanger/Melitrack",
+    stack: [
+      { name: "Python", icon: <FaPython color="#3776AB" /> },
+      { name: "FastAPI", icon: <SiFastapi color="#009688" /> },
+      { name: "React", icon: <FaReact color="#61DAFB" /> },
+      { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
+      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
+      { name: "Redis", icon: <SiRedis color="#FF4438" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: "Docker", icon: <FaDocker color="#2496ED" /> },
+      { name: "Git/GitHub", icon: <FaGitAlt color="#F05032" /> },
+    ],
+    gallery: [
+      "/assets/img/melitrack/Melitrack.png",
+      "/assets/img/melitrack/06.png",
+      "/assets/img/melitrack/04.png",
+      "/assets/img/melitrack/03.png",
+      "/assets/img/melitrack/02.png",
+      "/assets/img/melitrack/entrada.png",
+    ],
+  },
   {
     id: "nego-maq-api",
     title: "Nego Maq API",
