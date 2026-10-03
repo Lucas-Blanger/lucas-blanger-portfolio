@@ -1,6 +1,7 @@
 {
   "about": "About",
   "skills": "Skills",
+  "experiences": "Experience",
   "projects": "Projects",
   "contact": "Contact",
   "hello": "Hello, I'm",
@@ -8,6 +9,11 @@
   "about_title": "About Me",
   "about_description": "Since early on, I have been in contact with technology, starting to use computers at the age of four. At fifteen, I enrolled in the Integrated High School and Computer Technician program at the Federal Institute of Rio Grande do Sul – Campus Erechim, where I built a solid foundation in software development. I am currently pursuing a degree in Computer Science at the Regional University of the Northwest of Rio Grande do Sul (URI – Erechim). I am a developer with practical experience in C++, Python, and various frameworks such as Flask, Django, Node.js, and PHP/Laravel. I have designed and implemented applications using MySQL and PostgreSQL and have experience with containerization using Docker. I always strive to develop efficient, well-structured solutions aligned with good development practices. I am proactive, adaptable, and enthusiastic about new technological challenges. I am quick to learn new languages and frameworks, work collaboratively in team environments, and continuously seek professional growth through innovative projects.",
   "time": "Educational Timeline",
+  "experience_title": "Experience",
+  "experience_ifrs_period": "Jan. 2022 - Dec. 2022",
+  "experience_part_time": "Part-time",
+  "experience_ifrs_title": "Algorithms and Programming Logic Tutor | IFRS — Erechim Campus",
+  "experience_ifrs_description": "Supported learning in Java as a tutor in the Computer Technician program, assisting with Algorithms and Programming Logic courses.",
   "bacharel": "Bachelor's Degree in Computer Science",
   "high_school": "Integrated High School with Computer Technician",
   "my_skills": "My Skills",
@@ -68,5 +74,13 @@
   "desc_5": "TimeForge is an automatic academic timetable generator using CSP, Backtracking, and FFD. Built with a Java (Spring Boot) backend, Vue.js frontend, and PostgreSQL database.",
   "title_5": "TimeForge: Automatic Academic Timetable Generation Using CSP, Backtracking, and FFD",
   "desc_6": "This paper presents a progressive study of the Josephus problem using Linked List simulation, Mathematical Recurrence, and Segment Tree techniques. Developed in C++ for competitive programming analysis.",
-  "title_6": "The Josephus Problem: Analysis and Solutions Under Different Paradigms"
+  "title_6": "The Josephus Problem: Analysis and Solutions Under Different Paradigms",
+  "experience_free_period": "2025 - Aug. 2026",
+  "experience_free_title": "Freelance Back-end Developer | Independent Projects",
+  "experience_free_description": "Development of APIs and back-end services with a focus on Flask, including database modeling, authentication, and MySQL integration. I also develop websites and landing pages using HTML and CSS, creating responsive, modern interfaces tailored to client needs.",
+  "bolsa_period": "Sep. 2026 - Present",
+  "bolsa_title": "Undergraduate AI Research Fellow | URI — Erechim",
+  "bolsa_description": "Research focused on developing an explainable system for credit card fraud detection using Machine Learning.",
+  "Melitrack_short": "Stingless Hive Management Platform with Computer Vision and Real-Time Observability",
+  "Melitrack_long": "This project presents the architecture and development of Melitrack, a platform for urban stingless beekeeping that integrates hive geolocation, asynchronous AI-driven health analysis, harvest tracking, and distributed observability with Grafana and Loki."
 }

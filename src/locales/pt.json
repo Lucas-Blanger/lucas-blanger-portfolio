@@ -1,6 +1,7 @@
 {
   "about": "Sobre",
   "skills": "Skills",
+  "experiences": "Experiências",
   "projects": "Projetos",
   "contact": "Contato",
   "hello": "Oi, me chamo",
@@ -8,6 +9,11 @@
   "about_title": "Sobre Mim",
   "about_description": "Desde cedo tive contato com a tecnologia, começando a utilizar o computador aos 4 anos. Aos 15, ingressei no curso Técnico em Informática integrado ao Ensino Médio no Instituto Federal do Rio Grande do Sul – Campus Erechim, onde construí uma base sólida em desenvolvimento de software. Atualmente, sou graduando em Ciência da Computação pela Universidade Regional Integrada do Alto Uruguai e das Missões (URI – Erechim). Sou desenvolvedor com experiência prática em C++, Python e diversos frameworks, como Flask, Django, Node.js e PHP/Laravel. Já projetei e implementei aplicações utilizando MySQL e PostgreSQL, além de possuir familiaridade com conteinerização via Docker. Busco sempre desenvolver soluções eficientes, bem organizadas e alinhadas às boas práticas de desenvolvimento. Sou proativo, adaptável e entusiasta por novos desafios tecnológicos. Tenho facilidade em aprender novas linguagens e frameworks, trabalhar de forma colaborativa em equipe e procuro constantemente o crescimento profissional por meio de projetos inovadores.",
   "time": "Linha do Tempo Educacional",
+  "experience_title": "Experiências",
+  "experience_ifrs_period": "Jan. 2022 - Dez. 2022",
+  "experience_part_time": "Meio período",
+  "experience_ifrs_title": "Monitor de Algoritmos e Lógica de Programação | IFRS — Campus Erechim",
+  "experience_ifrs_description": "Atuação como monitor no curso técnico em Informática, com suporte ao aprendizado de Java nas disciplinas de Algoritmos e Lógica de Programação.",
   "bacharel": "Bacharelado em Ciência da Computação",
   "high_school": "Ensino Médio Integrado ao Técnico em Informática",
   "my_skills": "Minhas Skills",
@@ -68,5 +74,13 @@
   "desc_5": "O TimeForge é um sistema de geração automática de grades horárias acadêmicas utilizando CSP, Backtracking e FFD. Desenvolvido com backend em Java (Spring Boot), frontend em Vue.js e banco de dados PostgreSQL.",
   "title_5": "TimeForge: Geração Automática de Grades Horárias usando CSP, Backtracking e FFD",
   "desc_6": "Este artigo apresenta um estudo progressivo do problema de Josephus utilizando simulação por lista ligada, recorrência matemática e segment tree. Desenvolvido em C++ para análise em programação competitiva.",
-  "title_6": "O Problema de Josephus: Análise e Soluções sob Diferentes Paradigmas"
+  "title_6": "O Problema de Josephus: Análise e Soluções sob Diferentes Paradigmas",
+  "experience_free_period": "2025 - Ago. 2026",
+  "experience_free_title": "Desenvolvedor Back-end Freelancer | Projetos independentes",
+  "experience_free_description": "Desenvolvimento de APIs e serviços back-end com foco em Flask, incluindo modelagem de banco de dados, autenticação, integração com MySQL. Também desenvolvo websites e landing pages usando HTML e CSS, criando interfaces responsivas e modernas, adaptadas às necessidades do cliente.",
+  "bolsa_period": "Set. 2026 - Atualmente",
+  "bolsa_title": "Bolsista de Iniciação Científica em IA | URI — Erechim",
+  "bolsa_description": "Pesquisa focada no desenvolvimento de um sistema explicável para detecção de fraudes em cartões de crédito utilizando Aprendizado de Máquina.",
+  "Melitrack_short": "Plataforma de Gestão de Meliponários com Visão Computacional e Observabilidade em Tempo Real",
+  "Melitrack_long": "Este projeto apresenta a arquitetura e desenvolvimento do Melitrack, uma plataforma para meliponicultura urbana que integra geolocalização de colmeias, análise de saúde via inteligência artificial assíncrona, rastreio de colheitas e observabilidade distribuída com Grafana e Loki."
 }
