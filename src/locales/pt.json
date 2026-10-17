@@ -7,7 +7,7 @@
   "hello": "Oi, me chamo",
   "resume": "Baixar Currículo",
   "about_title": "Sobre Mim",
-  "about_description": "Desde cedo tive contato com a tecnologia, começando a utilizar o computador aos 4 anos. Aos 15, ingressei no curso Técnico em Informática integrado ao Ensino Médio no Instituto Federal do Rio Grande do Sul – Campus Erechim, onde construí uma base sólida em desenvolvimento de software. Atualmente, sou graduando em Ciência da Computação pela Universidade Regional Integrada do Alto Uruguai e das Missões (URI – Erechim). Sou desenvolvedor com experiência prática em C++, Python e diversos frameworks, como Flask, Django, Node.js e PHP/Laravel. Já projetei e implementei aplicações utilizando MySQL e PostgreSQL, além de possuir familiaridade com conteinerização via Docker. Busco sempre desenvolver soluções eficientes, bem organizadas e alinhadas às boas práticas de desenvolvimento. Sou proativo, adaptável e entusiasta por novos desafios tecnológicos. Tenho facilidade em aprender novas linguagens e frameworks, trabalhar de forma colaborativa em equipe e procuro constantemente o crescimento profissional por meio de projetos inovadores.",
+  "about_description": "Desde cedo tive contato com a tecnologia, começando a utilizar o computador aos 4 anos. Aos 15, ingressei no curso Técnico em Informática integrado ao Ensino Médio no Instituto Federal do Rio Grande do Sul (IFRS) – Campus Erechim, onde construí uma base sólida em desenvolvimento de software. Atualmente, sou graduando em Ciência da Computação pela Universidade Regional Integrada do Alto Uruguai e das Missões (URI – Erechim), atuo como Software Engineer Intern na DBC Company e desenvolvo pesquisa científica na área de Machine Learning, na URI-Erechim. Sou desenvolvedor com experiência prática em C++, Python e diversos frameworks, como Flask, Django, Node.js e PHP/Laravel. Já projetei e implementei aplicações utilizando MySQL e PostgreSQL, além de ter familiaridade com conteinerização via Docker. Busco sempre desenvolver soluções eficientes, bem organizadas e alinhadas às boas práticas de desenvolvimento. Sou proativo, adaptável e entusiasta de novos desafios tecnológicos. Tenho facilidade para aprender novas linguagens e frameworks, trabalho bem de forma colaborativa e busco constantemente crescer profissionalmente por meio de projetos inovadores.",
   "time": "Linha do Tempo Educacional",
   "experience_title": "Experiências",
   "experience_ifrs_period": "Jan. 2022 - Dez. 2022",
@@ -82,5 +82,8 @@
   "bolsa_title": "Bolsista de Iniciação Científica em IA | URI — Erechim",
   "bolsa_description": "Pesquisa focada no desenvolvimento de um sistema explicável para detecção de fraudes em cartões de crédito utilizando Aprendizado de Máquina.",
   "Melitrack_short": "Plataforma de Gestão de Meliponários com Visão Computacional e Observabilidade em Tempo Real",
-  "Melitrack_long": "Este projeto apresenta a arquitetura e desenvolvimento do Melitrack, uma plataforma para meliponicultura urbana que integra geolocalização de colmeias, análise de saúde via inteligência artificial assíncrona, rastreio de colheitas e observabilidade distribuída com Grafana e Loki."
+  "Melitrack_long": "Este projeto apresenta a arquitetura e desenvolvimento do Melitrack, uma plataforma para meliponicultura urbana que integra geolocalização de colmeias, análise de saúde via inteligência artificial assíncrona, rastreio de colheitas e observabilidade distribuída com Grafana e Loki.",
+  "dbc_period": "Out. 2026 - Atualmente",
+  "dbc_title": "Software Engineer Intern | DBC Company",
+  "dbc_description": "Atuação no desenvolvimento, teste e manutenção de sistemas para clientes corporativos, em equipes multidisciplinares."
 }

@@ -7,7 +7,7 @@
   "hello": "Hello, I'm",
   "resume": "Download CV",
   "about_title": "About Me",
-  "about_description": "Since early on, I have been in contact with technology, starting to use computers at the age of four. At fifteen, I enrolled in the Integrated High School and Computer Technician program at the Federal Institute of Rio Grande do Sul – Campus Erechim, where I built a solid foundation in software development. I am currently pursuing a degree in Computer Science at the Regional University of the Northwest of Rio Grande do Sul (URI – Erechim). I am a developer with practical experience in C++, Python, and various frameworks such as Flask, Django, Node.js, and PHP/Laravel. I have designed and implemented applications using MySQL and PostgreSQL and have experience with containerization using Docker. I always strive to develop efficient, well-structured solutions aligned with good development practices. I am proactive, adaptable, and enthusiastic about new technological challenges. I am quick to learn new languages and frameworks, work collaboratively in team environments, and continuously seek professional growth through innovative projects.",
+  "about_description": "I have been in contact with technology from an early age, starting to use computers at the age of 4. At 15, I enrolled in the Technical Course in Computer Science integrated with High School at the Federal Institute of Rio Grande do Sul (IFRS) – Erechim Campus, where I built a solid foundation in software development. I am currently a Computer Science undergraduate at the Regional Integrated University of Upper Uruguay and Missions (URI – Erechim), working as a Software Engineer Intern at DBC Company and conducting scientific research in Machine Learning at URI-Erechim. I am a developer with hands-on experience in C++, Python, and several frameworks, such as Flask, Django, Node.js, and PHP/Laravel. I have designed and implemented applications using MySQL and PostgreSQL, and I am familiar with containerization using Docker. I always strive to develop efficient, well-organized solutions aligned with development best practices. I am proactive, adaptable, and enthusiastic about new technological challenges. I learn new languages and frameworks easily, work well in collaborative teams, and constantly seek professional growth through innovative projects.",
   "time": "Educational Timeline",
   "experience_title": "Experience",
   "experience_ifrs_period": "Jan. 2022 - Dec. 2022",
@@ -82,5 +82,8 @@
   "bolsa_title": "Undergraduate AI Research Fellow | URI — Erechim",
   "bolsa_description": "Research focused on developing an explainable system for credit card fraud detection using Machine Learning.",
   "Melitrack_short": "Stingless Hive Management Platform with Computer Vision and Real-Time Observability",
-  "Melitrack_long": "This project presents the architecture and development of Melitrack, a platform for urban stingless beekeeping that integrates hive geolocation, asynchronous AI-driven health analysis, harvest tracking, and distributed observability with Grafana and Loki."
+  "Melitrack_long": "This project presents the architecture and development of Melitrack, a platform for urban stingless beekeeping that integrates hive geolocation, asynchronous AI-driven health analysis, harvest tracking, and distributed observability with Grafana and Loki.",
+  "dbc_period": "Out. 2026 - Present",
+  "dbc_title": "Software Engineer Intern | DBC Company",
+  "dbc_description": "Developing, testing, and maintaining systems for enterprise clients in multidisciplinary teams."
 }

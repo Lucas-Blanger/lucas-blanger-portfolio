@@ -4,10 +4,10 @@ export default function Timeline() {
   const { t } = useTranslation();
   const education = [
     {
-      year: "2020-2022",
+      year: "2025-atualmente",
       institution:
-        "Instituto Federal de Educação,Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim",
-      course: t("high_school"),
+        "Universidade Regional Integrada do Alto Uruguai e das Missões - Campus Erechim (URI - Erechim)",
+      course: t("bacharel"),
     },
     {
       year: "2024-2024",
@@ -15,10 +15,10 @@ export default function Timeline() {
       course: t("bacharel"),
     },
     {
-      year: "2025-atualmente",
+      year: "2020-2022",
       institution:
-        "Universidade Regional Integrada do Alto Uruguai e das Missões - Campus Erechim (URI - Erechim)",
-      course: t("bacharel"),
+        "Instituto Federal de Educação,Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim",
+      course: t("high_school"),
     },
   ];
 

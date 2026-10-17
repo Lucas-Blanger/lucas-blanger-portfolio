@@ -10,6 +10,13 @@ interface ExperienceEntry {
 
 const experiences: ExperienceEntry[] = [
   {
+    id: "dbc",
+    period: "dbc_period",
+    schedule: "experience_part_time",
+    title: "dbc_title",
+    description: "dbc_description",
+  },
+  {
     id: "bolsa",
     period: "bolsa_period",
     schedule: "experience_part_time",
