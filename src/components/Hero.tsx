@@ -41,7 +41,7 @@ export default function Hero() {
 
       <div className="z-10 mt-8 md:mt-0 md:ml-12">
         <img
-          src="/assets/lucas.png"
+          src="/assets/lucas.webp"
           alt="Lucas Blanger"
           className="w-80 h-80 object-cover rounded-3xl shadow-lg"
         />
