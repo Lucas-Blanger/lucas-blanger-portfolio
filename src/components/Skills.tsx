@@ -17,7 +17,6 @@ import {
   SiExpress,
   SiFlask,
   SiGodotengine,
-  SiLaravel,
   SiDjango,
   SiPandas,
   SiNumpy,
@@ -48,18 +47,17 @@ const skills = [
   {
     category: "Frameworks",
     items: [
-      { name: "Flask", icon: <SiFlask color="#000000" />, level: 80 },
-      { name: "Django Rest", icon: <SiDjango color="#092E20" />, level: 80 },
+      { name: "Flask", icon: <SiFlask className="text-fg" />, level: 80 },
+      { name: "Django Rest", icon: <SiDjango className="text-[#092E20] dark:text-[#44B78B]" />, level: 80 },
       { name: "FastAPI", icon: <SiFastapi color="#009688" />, level: 80 },
-      { name: "Express.js", icon: <SiExpress color="#000000" />, level: 30 },
-      { name: "Laravel", icon: <SiLaravel color="#FF2D20" />, level: 30 },
+      { name: "Express.js", icon: <SiExpress className="text-fg" />, level: 30 },
     ],
   },
   {
     category: "Data Analysis / Machine Learning",
     items: [
-      { name: "Pandas", icon: <SiPandas color="#150458" />, level: 75 },
-      { name: "Numpy", icon: <SiNumpy color="#013243" />, level: 75 },
+      { name: "Pandas", icon: <SiPandas className="text-[#150458] dark:text-[#a5a1ff]" />, level: 75 },
+      { name: "Numpy", icon: <SiNumpy className="text-[#013243] dark:text-[#4DABCF]" />, level: 75 },
       { name: "Matplotlib", icon: <FaChartLine color="#11557C" />, level: 75 },
       {
         name: "Scikit-learn",
@@ -92,32 +90,32 @@ const skills = [
 export default function Skills() {
   const { t } = useTranslation();
   return (
-    <section
-      id="skills"
-      className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-16 px-4 text-white"
-    >
+    <section id="skills" className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-green-400 text-center mb-16">
-          {t("my_skills")}
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="section-title text-5xl">{t("my_skills")}</h2>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-x-24 gap-y-16">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10">
           {skills.map((group, idx) => (
-            <div key={idx}>
-              <h3 className="text-3xl font-semibold text-green-300 mb-6 border-b border-green-600 pb-2">
+            <div key={idx} className="card card-hover p-6 md:p-8">
+              <h3 className="text-2xl md:text-3xl font-semibold text-accent mb-6 border-b border-line pb-2">
                 {group.category}
               </h3>
               <ul className="space-y-5">
                 {group.items.map((skill, i) => (
-                  <li key={i} className="flex items-center space-x-5">
-                    <div className="text-[36px] w-10">{skill.icon}</div>
+                  <li key={i} className="group flex items-center space-x-5">
+                    <div className="text-[36px] w-10 transition-transform duration-300 group-hover:scale-110">
+                      {skill.icon}
+                    </div>
                     <div className="w-full">
-                      <div className="text-base font-medium text-green-200 mb-1">
-                        {skill.name}
+                      <div className="flex justify-between text-base font-medium text-fg mb-1">
+                        <span>{skill.name}</span>
+                        <span className="text-sm text-muted">{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-gray-700 h-3 rounded">
+                      <div className="w-full bg-line/70 h-2.5 rounded-full overflow-hidden">
                         <div
-                          className="bg-green-500 h-3 rounded transition-all duration-500"
+                          className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-accent shadow-[0_0_10px_rgb(var(--c-glow)/0.6)] transition-all duration-500"
                           style={{ width: `${skill.level}%` }}
                         ></div>
                       </div>

@@ -93,7 +93,7 @@ const projects: Project[] = [
     postman: "https://documenter.getpostman.com/view/42551640/2sB3WpSMJN",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
-      { name: "Flask", icon: <SiFlask color="#000000" /> },
+      { name: "Flask", icon: <SiFlask className="text-fg" /> },
       { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
       { name: "Docker", icon: <FaDocker color="#2496ED" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
@@ -114,7 +114,7 @@ const projects: Project[] = [
     repo: "https://github.com/Lucas-Blanger/Agendify",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
-      { name: "Django Rest Framework", icon: <SiDjango color="#092E20" /> },
+      { name: "Django Rest Framework", icon: <SiDjango className="text-[#092E20] dark:text-[#44B78B]" /> },
       { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
       { name: "Docker", icon: <FaDocker color="#2496ED" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F05032" /> },
@@ -135,7 +135,7 @@ const projects: Project[] = [
     repo: "https://github.com/Lucas-Blanger/AgroClima",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
-      { name: "Django Rest Framework", icon: <SiDjango color="#092E20" /> },
+      { name: "Django Rest Framework", icon: <SiDjango className="text-[#092E20] dark:text-[#44B78B]" /> },
       { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
       { name: "Docker", icon: <FaDocker color="#2496ED" /> },
       {
@@ -187,7 +187,7 @@ const projects: Project[] = [
     repo: "https://github.com/Lucas-Blanger/Fluxo-de-caixa",
     stack: [
       { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
-      { name: "Express.js", icon: <SiExpress color="#000000" /> },
+      { name: "Express.js", icon: <SiExpress className="text-fg" /> },
       { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
       { name: "Git/GitHub", icon: <FaGitAlt color="#F1502F" /> },
     ],
@@ -202,7 +202,7 @@ const projects: Project[] = [
     repo: "https://github.com/Lucas-Blanger/contaHoras",
     stack: [
       { name: "Python", icon: <FaPython color="#3776AB" /> },
-      { name: "Flask", icon: <SiFlask color="#000000" /> },
+      { name: "Flask", icon: <SiFlask className="text-fg" /> },
       { name: "Django", icon: <SiDjango color="#F1502F" /> },
       { name: "HTML5", icon: <FaHtml5 color="#E34F26" /> },
       { name: "CSS3", icon: <FaCss3Alt color="#1572B6" /> },
@@ -257,15 +257,12 @@ export default function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20 px-4 text-white"
-    >
+    <section id="projects" className="min-h-screen py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center text-green-400 mb-4">
-          {t("my_projects")}
-        </h2>
-        <p className="text-center mb-14 text-lg text-gray-300">
+        <div className="text-center mb-4">
+          <h2 className="section-title text-5xl">{t("my_projects")}</h2>
+        </div>
+        <p className="text-center mb-14 text-lg text-muted">
           {t("about_projects")}{" "}
         </p>
 
@@ -296,22 +293,27 @@ function ProjectCard({ data, onOpen }: ProjectCardProps) {
 
   return (
     <button
+      id={`project-${data.id}`}
       onClick={() => onOpen(data.id)}
-      className="relative flex flex-col bg-gradient-to-b from-gray-800 via-gray-800/60 to-gray-800/30 rounded-2xl overflow-hidden shadow-lg outline-none
-                 ring-1 ring-green-500/30 hover:scale-[1.03] hover:ring-green-400/80 transition-transform duration-300"
+      className="card card-hover group relative flex flex-col overflow-hidden text-left outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
     >
-      <img
-        src={data.cover}
-        alt={data.title}
-        className="h-44 w-full object-cover"
-      />
+      <div className="relative h-44 w-full overflow-hidden">
+        <img
+          src={data.cover}
+          alt={data.title}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent" />
+      </div>
 
       <div className="p-5 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-2xl font-semibold text-green-300">
+          <h3 className="text-2xl font-semibold text-accent">
             {data.title}
           </h3>
-          <p className="text-sm mt-2 text-gray-300 line-clamp-3">
+          <p className="text-sm mt-2 text-muted line-clamp-3">
             {t(data.shortDesc)}
           </p>
         </div>
@@ -365,28 +367,29 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative max-w-3xl w-full bg-black/80 rounded-3xl ring-2 ring-green-500/60 p-8 overflow-y-auto max-h-[90vh] shadow-2xl"
+        className="relative max-w-3xl w-full bg-surface text-fg rounded-3xl border border-accent/40 p-8 overflow-y-auto max-h-[90vh] shadow-2xl"
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-300 hover:text-white text-2xl"
+          aria-label="Fechar"
+          className="absolute top-4 right-4 text-muted hover:text-fg text-2xl"
         >
           ✕
         </button>
 
-        <h3 className="text-4xl font-bold text-green-400 mb-4">{data.title}</h3>
-        <p className="text-lg text-gray-300 mb-6">{t(data.longDesc)}</p>
+        <h3 className="text-4xl font-bold text-accent mb-4">{data.title}</h3>
+        <p className="text-lg text-muted mb-6">{t(data.longDesc)}</p>
 
         <div className="flex flex-wrap gap-4 mb-6">
           {data.stack.map((s, i) => (
             <span
               key={i}
-              className="flex items-center gap-2 px-3 py-1 rounded-full border border-green-500/50 text-sm"
+              className="flex items-center gap-2 px-3 py-1 rounded-full border border-accent/40 bg-surface-2/60 text-sm"
             >
               {s.icon}
               {s.name}
@@ -399,7 +402,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             href={data.repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-green-400 hover:text-green-200 mb-8"
+            className="inline-flex items-center gap-2 text-accent hover:text-accent-strong mb-8"
           >
             <FaGithub /> {t("github")}
           </a>
@@ -410,7 +413,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             href={data.itch}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-pink-400 hover:text-pink-300 mb-8 ml-6"
+            className="inline-flex items-center gap-2 text-pink-600 dark:text-pink-400 hover:text-pink-500 dark:hover:text-pink-300 mb-8 ml-6"
           >
             <FaItchIo /> {t("itchio")}
           </a>
@@ -435,8 +438,10 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
                   key={i}
                   src={src}
                   alt={`${data.title} screenshot ${i + 1}`}
+                  loading="lazy"
+                  decoding="async"
                   onClick={() => setZoomIndex(i)}
-                  className="cursor-zoom-in w-full h-40 object-cover rounded-lg ring-1 ring-green-500/30 hover:ring-green-300 transition"
+                  className="cursor-zoom-in w-full h-40 object-cover rounded-lg ring-1 ring-accent/30 hover:ring-accent transition"
                 />
               ))}
             </div>
@@ -445,7 +450,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
 
         {zoomIndex !== null && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
             onClick={() => setZoomIndex(null)}
           >
             <div
@@ -454,7 +459,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
             >
               <button
                 onClick={() => setZoomIndex(null)}
-                className="absolute top-4 right-4 text-white text-3xl hover:text-green-200 z-10"
+                className="absolute top-4 right-4 text-white text-3xl hover:text-emerald-300 z-10"
               >
                 <FiX />
               </button>
@@ -467,7 +472,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
                       : null,
                   )
                 }
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-green-200 z-10"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-emerald-300 z-10"
               >
                 <FiChevronLeft />
               </button>
@@ -478,7 +483,7 @@ function ProjectModal({ data, onClose }: ProjectModalProps) {
                     prev !== null ? (prev + 1) % data.gallery.length : null,
                   )
                 }
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-green-200 z-10"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl hover:text-emerald-300 z-10"
               >
                 <FiChevronRight />
               </button>

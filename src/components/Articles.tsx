@@ -6,15 +6,14 @@ export default function Articles() {
   const { t } = useTranslation();
 
   return (
-    <section id="artigos" className="bg-black px-4 text-white pb-20">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-green-400 mb-6">
-          {t("my_articles")}
-        </h2>
-        <p className="text-lg text-gray-300 mb-12">{t("articles_desc")}</p>
+    <section id="artigos" className="px-4 pt-8 pb-20">
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+        <h2 className="section-title text-5xl mb-6">{t("my_articles")}</h2>
+        <p className="text-lg text-muted mb-12">{t("articles_desc")}</p>
         <Link
+          id="see-articles"
           to="/articles"
-          className="neon-button border-green-400 text-green-400 hover:bg-green-500 hover:text-black"
+          className="neon-button border-accent text-accent hover:bg-accent hover:text-accent-fg"
         >
           <FaBook className="text-xl" />
           {t("see_articles")}

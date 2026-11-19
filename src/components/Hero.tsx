@@ -1,50 +1,73 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaItchIo } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
+const socials = [
+  {
+    href: "https://www.linkedin.com/in/lucas-blanger-4668a2210/",
+    label: "LinkedIn",
+    icon: FaLinkedin,
+    external: true,
+  },
+  {
+    href: "https://github.com/Lucas-Blanger",
+    label: "GitHub",
+    icon: FaGithub,
+    external: true,
+  },
+  { href: "mailto:blangerlucas@gmail.com", label: "Email", icon: FaEnvelope },
+  {
+    href: "https://lucs-blanger.itch.io/",
+    label: "Itch.io",
+    icon: FaItchIo,
+    external: true,
+  },
+];
+
 export default function Hero() {
   const { t } = useTranslation();
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center text-white bg-gradient-to-b from-black to-gray-900 relative overflow-hidden"
+      className="relative min-h-[calc(100vh-73px)] flex flex-col md:flex-row items-center justify-center overflow-hidden px-4 py-16"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,0,0.2),transparent_70%)] animate-pulse"></div>
+      <div className="z-10 flex flex-col items-center md:items-start text-center md:text-left md:px-20">
+        <p className="text-accent text-2xl mb-2 font-medium">{t("hello")}</p>
+        <h1 className="font-display text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
+          <span className="block text-fg">Lucas</span>
+          <span className="block bg-gradient-to-r from-accent via-emerald-400 to-teal-400 bg-clip-text text-transparent">
+            Blanger
+          </span>
+        </h1>
 
-      <div className="z-10 flex flex-col items-center md:items-start text-center md:text-left px-4 md:px-20">
-        <p className="text-green-400 text-2xl mb-2">{t("hello")}</p>
-        <h1 className="text-5xl md:text-7xl font-bold mb-2">Lucas</h1>
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">Blanger</h1>
-
-        <div className="flex space-x-6 mt-4">
-          <a
-            href="https://www.linkedin.com/in/lucas-blanger-4668a2210/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className="text-green-400 hover:text-green-200 text-4xl transition" />
-          </a>
-          <a
-            href="https://github.com/Lucas-Blanger"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-green-400 hover:text-green-200 text-4xl transition" />
-          </a>
-          <a href="mailto:blangerlucas@gmail.com">
-            <FaEnvelope className="text-green-400 hover:text-green-200 text-4xl transition" />
-          </a>
-          <a href="https://lucs-blanger.itch.io/">
-            <FaItchIo className="text-green-400 hover:text-green-200 text-4xl transition" />
-          </a>
+        <div className="flex gap-4 mt-8">
+          {socials.map(({ href, label, icon: Icon, external }) => (
+            <a
+              key={label}
+              href={href}
+              aria-label={label}
+              {...(external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              className="grid h-12 w-12 place-items-center rounded-xl border border-line bg-surface/70 text-accent text-2xl transition-all duration-300 hover:-translate-y-1 hover:border-accent/60 hover:text-accent-strong hover:shadow-[0_8px_24px_-8px_rgb(var(--c-glow)/0.6)]"
+            >
+              <Icon />
+            </a>
+          ))}
         </div>
       </div>
 
-      <div className="z-10 mt-8 md:mt-0 md:ml-12">
-        <img
-          src="/assets/lucas.webp"
-          alt="Lucas Blanger"
-          className="w-80 h-80 object-cover rounded-3xl shadow-lg"
-        />
+      <div className="z-10 mt-12 md:mt-0 md:ml-12 animate-float">
+        <div className="relative">
+          {/* Glow ring behind the photo */}
+          <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent/60 via-emerald-400/30 to-teal-400/60 opacity-70 blur-2xl" />
+          <img
+            src="/assets/lucas.webp"
+            alt="Lucas Blanger"
+            fetchPriority="high"
+            decoding="async"
+            className="relative w-72 h-72 md:w-80 md:h-80 object-cover rounded-3xl border border-accent/40 shadow-2xl"
+          />
+        </div>
       </div>
     </section>
   );

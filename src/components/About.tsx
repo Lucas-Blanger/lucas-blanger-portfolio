@@ -1,4 +1,4 @@
-import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import { Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -6,24 +6,26 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900 px-4 py-16"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
     >
-      <div className="bg-green-900/50 backdrop-blur-sm rounded-3xl shadow-lg max-w-6xl mx-auto p-10 text-center border border-green-500/30">
-        <h2 className="text-4xl md:text-5xl font-bold text-green-300 mb-4 uppercase tracking-wide">
+      <div className="card relative max-w-6xl mx-auto p-10 text-center overflow-hidden">
+        {/* Accent line on top of the card */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent" />
+        <h2 className="section-title text-4xl md:text-5xl mb-8 uppercase tracking-wide">
           {t("about_title")}
         </h2>
-        <div className="h-1 w-14 bg-green-400 mx-auto mb-8 rounded"></div>
 
-        <p className="text-gray-200 text-xl leading-relaxed text-justify tracking-wide">
+        <p className="text-fg/85 text-xl leading-relaxed text-justify tracking-wide">
           {t("about_description")}
         </p>
       </div>
       <a
+        id="download-cv"
         href="/LucasBlangerCV.pdf"
         download
-        className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-green-600/50 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition duration-300"
+        className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-fg font-semibold rounded-full shadow-md transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_-8px_rgb(var(--c-glow)/0.7)]"
       >
-        <ArrowDownTrayIcon className="h-5 w-5" />
+        <Download className="h-5 w-5" />
         {t("resume")}
       </a>
     </section>

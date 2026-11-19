@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import AnimatedBackground from "@/components/AnimatedBackground";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function ArticlesPage() {
   const { t } = useTranslation();
@@ -44,12 +46,18 @@ export default function ArticlesPage() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 px-4 py-20 text-white">
+    <section className="relative min-h-screen px-4 py-20 text-fg">
+      <AnimatedBackground />
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold text-green-400 mb-6 text-center">
-          {t("my_articles") || "Meus Artigos"}
-        </h2>
-        <p className="text-center mb-12 text-lg text-gray-300">
+        <div className="text-center mb-6">
+          <h1 className="section-title text-5xl">
+            {t("my_articles") || "Meus Artigos"}
+          </h1>
+        </div>
+        <p className="text-center mb-12 text-lg text-muted">
           {t("articles_desc") ||
             "Aqui estão alguns artigos sobre minha experiência, estudos e dicas na área de tecnologia."}
         </p>
@@ -58,16 +66,16 @@ export default function ArticlesPage() {
           {articles.map((article) => (
             <div
               key={article.id}
-              className="bg-gray-800 rounded-2xl p-6 shadow-lg ring-1 ring-green-500/30 hover:ring-green-400/80 transition"
+              className="card card-hover flex flex-col p-6"
             >
-              <h3 className="text-2xl font-semibold text-green-300 mb-2">
+              <h2 className="text-2xl font-semibold text-accent mb-2">
                 {t(article.title)}
-              </h3>
-              <p className="text-gray-300 mb-4">{t(article.desc)}</p>
+              </h2>
+              <p className="text-muted mb-4 flex-1">{t(article.desc)}</p>
               <a
                 href={article.pdf}
                 download
-                className="inline-block px-4 py-2 border border-green-400 rounded-lg text-green-400 hover:bg-green-400 hover:text-black transition"
+                className="self-start inline-block px-4 py-2 border border-accent rounded-lg text-accent hover:bg-accent hover:text-accent-fg transition"
               >
                 {t("read_more") || "Leia mais"}
               </a>
@@ -77,8 +85,9 @@ export default function ArticlesPage() {
 
         <div className="flex justify-center">
           <Link
+            id="back-home"
             to="/"
-            className="inline-flex items-center gap-2 px-4 py-2 border border-green-400 rounded-lg text-green-400 hover:bg-green-400 hover:text-black transition"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-accent rounded-lg text-accent hover:bg-accent hover:text-accent-fg transition"
           >
             {t("back_home") || "Voltar"}
           </Link>
