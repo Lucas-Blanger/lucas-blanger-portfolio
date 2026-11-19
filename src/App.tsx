@@ -9,21 +9,24 @@ import Achievements from "@/components/Achievements";
 import TimeLine from "@/components/TimeLine";
 import Experience from "@/components/Experience";
 import Articles from "@/components/Articles";
-import "./App.css";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 function App() {
   return (
-    <div className="font-sans text-gray-800">
+    <div className="relative font-sans text-fg">
+      <AnimatedBackground />
       <Navbar />
-      <Hero />
-      <About />
-      <TimeLine />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Achievements />
-      <Articles />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <TimeLine />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Achievements />
+        <Articles />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
