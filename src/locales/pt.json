@@ -79,5 +79,7 @@
   "Melitrack_long": "Este projeto apresenta a arquitetura e desenvolvimento do Melitrack, uma plataforma para meliponicultura urbana que integra geolocalização de colmeias, análise de saúde via inteligência artificial assíncrona, rastreio de colheitas e observabilidade distribuída com Grafana e Loki.",
   "dbc_period": "Out. 2026 - Atualmente",
   "dbc_title": "Software Engineer Intern | DBC Company",
-  "dbc_description": "Atuação no desenvolvimento, teste e manutenção de sistemas para clientes corporativos, em equipes multidisciplinares."
+  "dbc_description": "Atuação no desenvolvimento, teste e manutenção de sistemas para clientes corporativos, em equipes multidisciplinares.",
+  "theme_light": "Ativar tema claro",
+  "theme_dark": "Ativar tema escuro"
 }

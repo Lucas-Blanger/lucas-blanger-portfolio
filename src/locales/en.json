@@ -79,5 +79,7 @@
   "Melitrack_long": "This project presents the architecture and development of Melitrack, a platform for urban stingless beekeeping that integrates hive geolocation, asynchronous AI-driven health analysis, harvest tracking, and distributed observability with Grafana and Loki.",
   "dbc_period": "Out. 2026 - Present",
   "dbc_title": "Software Engineer Intern | DBC Company",
-  "dbc_description": "Developing, testing, and maintaining systems for enterprise clients in multidisciplinary teams."
+  "dbc_description": "Developing, testing, and maintaining systems for enterprise clients in multidisciplinary teams.",
+  "theme_light": "Switch to light theme",
+  "theme_dark": "Switch to dark theme"
 }
